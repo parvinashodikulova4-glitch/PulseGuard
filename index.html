@@ -1,402 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="PulseGuard helps families learn about household emergency preparedness.">
-
-    <title>PulseGuard | Preparedness starts before an emergency</title>
-
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PulseGuard explores household emergency preparedness through community feedback and accessible public-health education.">
+  <meta name="theme-color" content="#010511">
+  <title>PulseGuard | Preparedness starts before an emergency</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <!-- HEADER AND NAVIGATION -->
-    <header class="header">
-
-        <a href="#home" class="brand">
-            <span class="brand-icon">✚</span>
-            <span>PulseGuard</span>
-        </a>
-
-        <button class="menu-toggle" id="menuToggle">
-            ☰
-        </button>
-
-        <nav id="nav">
-            <a href="#about" data-i18n="navAbout">About</a>
-            <a href="#research" data-i18n="navResearch">Research</a>
-            <a href="#resources" data-i18n="navResources">Resources</a>
-            <a href="#contact" data-i18n="navContact">Contact</a>
-        </nav>
-
-        <select id="languageSelect" aria-label="Select language">
-            <option value="en">EN</option>
-            <option value="uz">UZ</option>
-            <option value="ru">RU</option>
-        </select>
-
-    </header>
-
-
-    <!-- HERO SECTION -->
-    <main>
-
-        <section class="hero" id="home">
-
-            <div class="hero-content">
-
-                <p class="eyebrow" data-i18n="eyebrow">
-                    HOUSEHOLD EMERGENCY PREPAREDNESS
-                </p>
-
-                <h1 data-i18n="headline">
-                    Preparedness starts
-                    <span>before</span> an emergency.
-                </h1>
-
-                <p class="hero-text" data-i18n="heroText">
-                    Clear information and practical planning can
-                    help families feel more prepared to seek help
-                    when it matters.
-                </p>
-
-                <div class="actions">
-
-                    <a href="#resources"
-                       class="button primary"
-                       data-i18n="primaryButton">
-                        Explore resources
-                    </a>
-
-                    <a href="#about"
-                       class="button secondary"
-                       data-i18n="secondaryButton">
-                        About PulseGuard
-                    </a>
-
-                </div>
-
-                <p class="disclaimer" data-i18n="heroDisclaimer">
-                    An educational project. Not a replacement
-                    for emergency services or professional
-                    medical advice.
-                </p>
-
-            </div>
-
-
-            <!-- DECORATIVE MEDICAL ILLUSTRATION -->
-            <div class="hero-visual">
-
-                <div class="orbit orbit-one"></div>
-                <div class="orbit orbit-two"></div>
-
-                <div class="medical-card">
-
-                    <div class="medical-cross">+</div>
-
-                    <div class="medical-line"></div>
-                    <div class="medical-line short"></div>
-
-                    <div class="medical-heart">♡</div>
-
-                </div>
-
-                <div class="floating-tag">
-                    <span class="tag-dot"></span>
-                    <span data-i18n="visualTag">
-                        Preparedness begins at home
-                    </span>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- THREE MAIN IDEAS -->
-        <section class="trust-strip">
-
-            <div>
-                <strong data-i18n="stripOne">Learn</strong>
-                <span data-i18n="stripOneText">
-                    Understand the basics
-                </span>
-            </div>
-
-            <div>
-                <strong data-i18n="stripTwo">Prepare</strong>
-                <span data-i18n="stripTwoText">
-                    Make a family plan
-                </span>
-            </div>
-
-            <div>
-                <strong data-i18n="stripThree">Share</strong>
-                <span data-i18n="stripThreeText">
-                    Build awareness together
-                </span></div>
-
-        </section>
-
-
-        <!-- ABOUT SECTION -->
-        <section class="section" id="about">
-
-            <div class="section-intro">
-
-                <p class="eyebrow" data-i18n="aboutEyebrow">
-                    WHY PULSEGUARD?
-                </p>
-
-                <h2 data-i18n="aboutTitle">
-                    Preparedness should feel clear,
-                    not overwhelming.
-                </h2>
-
-                <p data-i18n="aboutText">
-                    PulseGuard is a youth-led public-health
-                    education initiative exploring how families
-                    prepare for urgent medical situations and
-                    what information could help them plan ahead.
-                </p>
-
-            </div>
-
-
-            <div class="values">
-
-                <article class="value-card">
-                    <span class="value-icon">⌕</span>
-
-                    <h3 data-i18n="valueOneTitle">
-                        Accessible information
-                    </h3>
-
-                    <p data-i18n="valueOneText">
-                        Present useful information in clear,
-                        understandable language.
-                    </p>
-                </article>
-
-
-                <article class="value-card">
-                    <span class="value-icon">♡</span>
-
-                    <h3 data-i18n="valueTwoTitle">
-                        Family preparedness
-                    </h3>
-
-                    <p data-i18n="valueTwoText">
-                        Encourage households to discuss contacts
-                        and practical plans.
-                    </p>
-                </article>
-
-
-                <article class="value-card">
-                    <span class="value-icon">✧</span>
-
-                    <h3 data-i18n="valueThreeTitle">
-                        Community insight
-                    </h3>
-
-                    <p data-i18n="valueThreeText">
-                        Use survey findings and feedback
-                        to guide improvements.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- RESEARCH PREVIEW -->
-        <section class="research-preview" id="research">
-
-            <div class="research-inner">
-
-                <div>
-
-                    <p class="eyebrow" data-i18n="researchEyebrow">
-                        COMMUNITY RESEARCH
-                    </p>
-
-                    <h2 data-i18n="researchTitle">
-                        Built by listening first.
-                    </h2>
-
-                    <p data-i18n="researchText">
-                        Our survey explores household preparedness,
-                        information needs, and preferred educational
-                        resources.
-                    </p>
-
-                    <a href="#contact" class="text-link"
-                       data-i18n="researchLink">
-                        Follow the project →
-                    </a>
-
-                </div>
-
-
-                <div class="research-stat">
-
-                    <span class="stat-number">68</span>
-
-                    <span class="stat-label"
-                          data-i18n="respondents">
-                        survey respondents
-                    </span>
-
-                    <small data-i18n="preliminary">
-                        Initial survey sample. Verify final dataset
-                        before publication.
-                    </small>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- RESOURCES SECTION -->
-        <section class="section resource-section" id="resources">
-
-            <div class="section-intro">
-
-                <p class="eyebrow" data-i18n="resourcesEyebrow">
-                    EXPLORE
-                </p>
-
-                <h2 data-i18n="resourcesTitle">
-                    Small steps can make information easier to find.
-                </h2>
-
-                <p data-i18n="resourcesText">
-                    The next stage of PulseGuard will bring togetherpractical planning tools and links to trusted
-                    educational resources.
-                </p>
-
-            </div>
-
-
-            <div class="resource-grid">
-
-                <article>
-                    <span>01</span>
-                    <h3 data-i18n="resourceOneTitle">
-                        Family planning
-                    </h3>
-                    <p data-i18n="resourceOneText">
-                        A simple checklist to discuss with your household.
-                    </p>
-                </article>
-
-
-                <article>
-                    <span>02</span>
-                    <h3 data-i18n="resourceTwoTitle">
-                        Learning resources
-                    </h3>
-                    <p data-i18n="resourceTwoText">
-                        Find recognized first-aid and public-health education.
-                    </p>
-                </article>
-
-
-                <article>
-                    <span>03</span>
-                    <h3 data-i18n="resourceThreeTitle">
-                        Research findings
-                    </h3>
-                    <p data-i18n="resourceThreeText">
-                        Explore what survey participants shared.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- CONTACT SECTION -->
-        <section class="closing" id="contact">
-
-            <p class="eyebrow" data-i18n="closingEyebrow">
-                BE PART OF THE CONVERSATION
-            </p>
-
-            <h2 data-i18n="closingTitle">
-                Better preparedness begins with better questions.
-            </h2>
-
-            <p data-i18n="closingText">
-                Follow PulseGuard as the project develops its
-                research, resources, and community feedback process.
-            </p>
-
-            <a href="parvinashodikulova4@gmail.com"
-               class="button primary"
-               data-i18n="contactButton">
-                Contact the project
-            </a>
-
-            <p class="disclaimer dark" data-i18n="safetyNote">
-                For an immediate emergency, contact your local
-                emergency service. PulseGuard is educational and
-                does not provide diagnosis or treatment.
-            </p>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <a href="#home" class="brand footer-brand">
-            <span class="brand-icon">✚</span>
-            PulseGuard
-        </a>
-
-        <p data-i18n="footerLine">
-            Preparedness starts before an emergency.
-        </p>
-
-        <small>
-            © 2026 PulseGuard ·
-            <span data-i18n="footerNote">
-                Independent educational project
-            </span>
-        </small>
-        <div class="social-links">
-
-    <a href="https://www.instagram.com/pulseguard_?obrf=MXJ0MThzNjN0M3g3dw%3D%3D&utm_source=qr"
-       target="_blank"
-       rel="noopener noreferrer">
-        Instagram
+  <header class="header">
+    <a href="#home" class="brand" aria-label="PulseGuard home">
+      <span class="brand-icon">✚</span><span>PulseGuard</span>
     </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#research" data-i18n="navResearch">Research</a>
+      <a href="#resources" data-i18n="navResources">Resources</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <label class="language-wrap">
+      <span class="sr-only" data-i18n="languageLabel">Language</span>
+      <select id="languageSelect" aria-label="Select language">
+        <option value="en">EN</option><option value="uz">UZ</option><option value="ru">RU</option>
+      </select>
+    </label>
+  </header>
 
-    <a href="https://t.me/pulseguard"
-       target="_blank"
-       rel="noopener noreferrer">
-        Telegram
-    </a>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="eyebrow">HOUSEHOLD EMERGENCY PREPAREDNESS</p>
+        <h1 data-i18n="headline">Preparedness starts <span>before</span> an emergency.</h1>
+        <p class="hero-text" data-i18n="heroText">Clear information and practical planning can help families feel more prepared to seek help when it matters.</p>
+        <div class="actions">
+          <a href="#research" class="button primary" data-i18n="primaryButton">Explore the research</a>
+          <a href="#about" class="button secondary" data-i18n="secondaryButton">About PulseGuard</a>
+        </div>
+        <p class="disclaimer" data-i18n="heroDisclaimer">An educational project. Not a replacement for emergency services or professional medical advice.</p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="medical-card">
+          <div class="medical-cross">+</div><div class="medical-line"></div><div class="medical-line short"></div>
+          <div class="medical-heart">♡</div>
+        </div>
+        <div class="floating-tag"><span class="tag-dot"></span><span data-i18n="visualTag">Preparedness begins at home</span></div>
+      </div>
+      <div class="hero-index">01 / PULSEGUARD</div>
+    </section>
 
-</div>
+    <section class="trust-strip" aria-label="Project approach">
+      <div><strong data-i18n="stripOne">Learn</strong><span data-i18n="stripOneText">Understand the basics</span></div>
+      <div><strong data-i18n="stripTwo">Prepare</strong><span data-i18n="stripTwoText">Make a family plan</span></div>
+      <div><strong data-i18n="stripThree">Share</strong><span data-i18n="stripThreeText">Build awareness together</span></div>
+    </section>
 
-    </footer>
+    <section class="section" id="about">
+      <div class="section-intro">
+        <p class="eyebrow" data-i18n="aboutEyebrow">WHY PULSEGUARD?</p>
+        <h2 data-i18n="aboutTitle">Preparedness should feel clear, not overwhelming.</h2>
+        <p data-i18n="aboutText">PulseGuard is a youth-led public-health education initiative exploring how families prepare for urgent medical situations and what information could help them plan ahead.</p>
+      </div>
+      <div class="values">
+        <article class="value-card"><span class="value-icon">⌕</span><h3 data-i18n="valueOneTitle">Accessible information</h3><p data-i18n="valueOneText">Present useful information in clear, understandable language.</p></article>
+        <article class="value-card"><span class="value-icon">♡</span><h3 data-i18n="valueTwoTitle">Family preparedness</h3><p data-i18n="valueTwoText">Encourage households to discuss contacts and practical plans.</p></article>
+        <article class="value-card"><span class="value-icon">✧</span><h3 data-i18n="valueThreeTitle">Community insight</h3><p data-i18n="valueThreeText">Use survey findings and feedback to guide improvements.</p></article>
+      </div>
+    </section>
 
+    <section class="research-section" id="research">
+      <div class="research-heading-row">
+        <div>
+          <p class="eyebrow" data-i18n="researchEyebrow">COMMUNITY RESEARCH / 01</p>
+          <h2 data-i18n="researchTitle">What does household preparedness look like?</h2>
+          <p class="research-lead" data-i18n="researchText">An initial survey explored preparedness, information needs, and preferred educational resources.</p>
+        </div>
+        <div class="sample-card">
+          <span class="sample-kicker" data-i18n="sampleLabel">INITIAL SURVEY</span>
+          <strong class="sample-number">06</strong>
+          <span data-i18n="respondents">respondents</span>
+          <small data-i18n="sampleNote">Six submitted responses included in this preliminary summary.</small>
+        </div> 
+      </div>
+            <div class="metric-grid">
+        <article class="metric-card"><span class="metric-label" data-i18n="metricPrepared">Felt very or somewhat prepared</span><strong>4/6</strong><span class="metric-foot" data-i18n="metricPreparedFoot">66.7% of respondents</span></article>
+        <article class="metric-card"><span class="metric-label" data-i18n="metricKnow">Definitely knew how to contact emergency services</span><strong>4/6</strong><span class="metric-foot" data-i18n="metricKnowFoot">66.7% of respondents</span></article>
+        <article class="metric-card"><span class="metric-label" data-i18n="metricWebsite">Preferred a simple website</span><strong>4/6</strong><span class="metric-foot" data-i18n="metricWebsiteFoot">66.7% of respondents</span></article>
+        <article class="metric-card"><span class="metric-label" data-i18n="metricInterest">Interested or maybe interested in a free resource</span><strong>6/6</strong><span class="metric-foot" data-i18n="metricInterestFoot">100% combined</span></article>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="chart-intro">
+        <div><p class="eyebrow" data-i18n="breakdownEyebrow">RESPONSE BREAKDOWN</p><h3 data-i18n="breakdownTitle">Eight questions. One early snapshot.</h3></div>
+        <p data-i18n="chartHint">Bars show the share of the six respondents who selected each answer. Counts are shown beside percentages.</p>
+      </div>
+      <div id="surveyCharts" class="chart-grid" aria-live="polite"></div>
 
+      <div class="insight-panel">
+        <div class="insight-title"><p class="eyebrow" data-i18n="insightEyebrow">EARLY SIGNALS</p><h3 data-i18n="insightTitle">What we can take from this first snapshot</h3></div>
+        <div class="insight-list">
+          <article><span>01</span><div><h4 data-i18n="insightOneTitle">Preparedness is more than knowing a number</h4><p data-i18n="insightOneText">Four respondents felt very or somewhat prepared, while two reported low or no preparedness. Knowing how to contact emergency services does not automatically mean a household feels ready.</p></div></article>
+          <article><span>02</span><div><h4 data-i18n="insightTwoTitle">Clear, organized information matters</h4><p data-i18n="insightTwoText">Emergency contact numbers were the most selected information need. Not knowing what to prepare and finding trustworthy information were the most frequently selected barriers.</p></div></article>
+          <article><span>03</span><div><h4 data-i18n="insightThreeTitle">A simple website is worth testing</h4><p data-i18n="insightThreeText">Four respondents preferred a simple website. All six answered yes or maybe when asked about a free educational resource.</p></div></article>
+        </div>
+      </div>
+
+      <div class="method-note">
+        <span class="method-icon">i</span>
+        <div><strong data-i18n="methodTitle">Methodology and limitations</strong><p data-i18n="methodText">This is a descriptive summary of six survey responses. Percentages are calculated from the displayed counts and rounded to one decimal place. The sample is small and may not represent the wider community. Results are preliminary and should not be generalized.</p></div>
+      </div>
+    </section>
+
+    <section class="section resource-section" id="resources">
+      <div class="section-intro">
+        <p class="eyebrow" data-i18n="resourcesEyebrow">NEXT STEPS</p>
+        <h2 data-i18n="resourcesTitle">Turn community questions into useful resources.</h2>
+        <p data-i18n="resourcesText">PulseGuard will use feedback to shape practical planning tools and accessible educational information.</p>
+      </div>
+      <div class="resource-grid">
+        <article><span>01</span><h3 data-i18n="resourceOneTitle">Family planning</h3><p data-i18n="resourceOneText">A simple checklist to discuss with your household.</p></article>
+        <article><span>02</span><h3 data-i18n="resourceTwoTitle">Learning resources</h3><p data-i18n="resourceTwoText">Find recognized first-aid and public-health education.</p></article>
+        <article><span>03</span><h3 data-i18n="resourceThreeTitle">Research updates</h3><p data-i18n="resourceThreeText">Explore how participant feedback guides the project.</p></article>
+      </div>
+    </section>
+          <section class="closing" id="contact">
+      <p class="eyebrow" data-i18n="closingEyebrow">BE PART OF THE CONVERSATION</p>
+      <h2 data-i18n="closingTitle">Better preparedness begins with better questions.</h2>
+      <p data-i18n="closingText">Follow PulseGuard as the project develops its research, resources, and community feedback process.</p>
+      <a href="mailto:parvinashodikulova4@gmail.com" class="button primary" data-i18n="contactButton">Contact the project</a>
+      <p class="disclaimer dark" data-i18n="safetyNote">For an immediate emergency, contact your local emergency service. PulseGuard is educational and does not provide diagnosis or treatment.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="brand footer-brand"><span class="brand-icon">✚</span>PulseGuard</a>
+    <p data-i18n="footerLine">Preparedness starts before an emergency.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/pulseguard_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://t.me/pulseguard" target="_blank" rel="noopener noreferrer">Telegram</a>
+    </div>
+    <small>© 2026 PulseGuard · <span data-i18n="footerNote">Independent educational project</span></small>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
+    
