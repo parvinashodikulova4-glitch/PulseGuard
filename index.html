@@ -18,6 +18,7 @@
       <a href="#about" data-i18n="navAbout">About</a>
       <a href="#research" data-i18n="navResearch">Research</a>
       <a href="#resources" data-i18n="navResources">Resources</a>
+      <a href="#tools">Toolkit</a>
       <a href="#contact" data-i18n="navContact">Contact</a>
     </nav>
     <label class="language-wrap">
@@ -124,7 +125,114 @@
         <article><span>03</span><h3 data-i18n="resourceThreeTitle">Research updates</h3><p data-i18n="resourceThreeText">Explore how participant feedback guides the project.</p></article>
       </div>
     </section>
-          <section class="closing" id="contact">
+      
+    <section class="section phase3-section" id="tools">
+      <div class="section-intro">
+        <p class="eyebrow" data-p3="p3Eyebrow">PRACTICAL TOOLS / 02</p>
+        <h2 data-p3="p3Title">Make preparedness part of your household routine.</h2>
+        <p data-p3="p3Intro">Use these educational tools to organize information, learn the basics and reflect on what your household may need. No personal information is sent to PulseGuard.</p>
+      </div>
+
+      <div class="p3-grid">
+        <article class="p3-card p3-checklist">
+          <p class="eyebrow">01 / PULSEGUARD TOOLKIT</p>
+          <h3 data-p3="checkTitle">Family preparedness checklist</h3>
+          <p data-p3="checkIntro">Mark the items your household has discussed or prepared. Your progress is saved only in this browser.</p>
+          <div class="p3-progress"><div class="p3-progress-top"><span data-p3="progressLabel">Your checklist progress</span><strong id="checkProgress">0/6 · 0%</strong></div><div class="p3-progress-track"><span id="checkProgressBar"></span></div></div>
+          <div class="p3-checks">
+            <label><input type="checkbox" class="prep-check"><span data-p3="check1">Know the local emergency number and how to contact emergency services</span></label>
+            <label><input type="checkbox" class="prep-check"><span data-p3="check2">Choose a family meeting place and an out-of-area contact</span></label>
+            <label><input type="checkbox" class="prep-check"><span data-p3="check3">Keep important phone numbers accessible</span></label>
+            <label><input type="checkbox" class="prep-check"><span data-p3="check4">Know where essential medicines and allergy information are recorded</span></label>
+            <label><input type="checkbox" class="prep-check"><span data-p3="check5">Discuss who may need extra help during an emergency</span></label>
+            <label><input type="checkbox" class="prep-check"><span data-p3="check6">Keep a basic first-aid kit and check its contents regularly</span></label>
+          </div>
+          <button class="button secondary p3-button" id="resetChecklist" type="button" data-p3="reset">Reset checklist</button>
+        </article>
+
+        <article class="p3-card">
+          <p class="eyebrow">02 / PRINTABLE TOOL</p>
+          <h3 data-p3="cardTitle">Emergency information card</h3>
+          <p data-p3="cardIntro">Fill in only what you choose. This tool does not save or send the details. Print the card and keep it somewhere safe.</p>
+          <form id="infoCardForm" class="p3-form">
+            <label><span data-p3="personLabel">Name</span><input id="cardName" type="text" autocomplete="off"></label>
+            <label><span data-p3="contactLabel">Emergency contact and phone</span><input id="cardContact" type="text" autocomplete="off"></label>
+            <label><span data-p3="allergyLabel">Allergies or important medical notes</span><textarea id="cardAllergies" rows="2"></textarea></label>
+            <label><span data-p3="medLabel">Medicines (if relevant)</span><textarea id="cardMeds" rows="2"></textarea></label>
+            <label><span data-p3="doctorLabel">Doctor or clinic (optional)</span><input id="cardDoctor" type="text" autocomplete="off"></label>
+            <button class="button primary p3-button" type="button" id="printCard" data-p3="printCard">Print information card</button>
+          </form>
+          <div id="printableCard" class="printable-card" aria-hidden="true"></div>
+        </article>
+
+        <article class="p3-card">
+          <p class="eyebrow">03 / LEARN</p>
+          <h3 data-p3="quizTitle">Quick knowledge check</h3>
+          <p data-p3="quizIntro">Choose an answer to test your understanding. This is general education, not medical training.</p>
+          <fieldset class="p3-quiz">
+            <legend data-p3="quizQ">What is a sensible first step when making a household emergency plan?</legend>
+            <label><input type="radio" name="p3quiz" value="correct"><span data-p3="quizA">Agree on how family members will contact one another and where to meet</span></label>
+            <label><input type="radio" name="p3quiz" value="wrong"><span data-p3="quizB">Wait until an emergency happens</span></label>
+            <label><input type="radio" name="p3quiz" value="wrong"><span data-p3="quizC">Rely on remembering every phone number</span></label>
+          </fieldset>
+          <button class="button secondary p3-button" id="checkQuiz" type="button" data-p3="checkAnswer">Check answer</button>
+          <p class="p3-feedback" id="quizFeedback" aria-live="polite" data-p3="quizHint">Select an answer, then check it.</p>
+        </article>
+
+        <article class="p3-card p3-myth">
+          <p class="eyebrow">04 / THINK CRITICALLY</p>
+          <h3 data-p3="mythTitle">Myth vs. fact</h3>
+          <div class="myth-labels"><span data-p3="myth">MYTH</span><span data-p3="fact">FACT</span></div>
+          <p class="myth-quote" data-p3="mythText">“If everyone has a mobile phone, a family communication plan is unnecessary.”</p>
+          <p data-p3="factText">A plan is still useful. Phones may be unavailable, batteries may run out, or networks may be disrupted. Agree on backup ways to communicate and meet.</p>
+        </article>
+
+        <article class="p3-card">
+          <p class="eyebrow">05 / SCENARIO</p>
+          <h3 data-p3="scenarioTitle">Think through a household scenario</h3>
+          <p data-p3="scenarioText">A family member cannot be reached during an urgent situation. What can help your household respond in an organized way?</p>
+          <button class="button secondary p3-button" type="button" id="scenarioToggle" aria-expanded="false" data-p3="scenarioReveal">Show planning points</button>
+          <p class="scenario-answer" id="scenarioAnswer" hidden data-p3="scenarioAnswer">A household plan can include an agreed meeting place, an out-of-area contact, accessible emergency numbers and a clear way to share essential information. Follow local emergency-service guidance.</p>
+        </article>
+
+        <article class="p3-card">
+          <p class="eyebrow">06 / REFERENCES</p>
+          <h3 data-p3="sourceTitle">Trusted learning sources</h3>
+          <p data-p3="sourceIntro">Use recognized organizations for further learning. Always follow local emergency-service instructions.</p>
+          <ul class="p3-sources">
+            <li><a href="https://www.who.int/health-topics" target="_blank" rel="noopener noreferrer">WHO</a><span data-p3="source1">World Health Organization: health topics and public-health guidance</span></li>
+            <li><a href="https://www.ifrc.org/our-work/health-and-care/first-aid" target="_blank" rel="noopener noreferrer">IFRC</a><span data-p3="source2">International Federation of Red Cross and Red Crescent Societies: first aid and community preparedness</span></li>
+            <li><a href="https://www.nhs.uk/conditions/first-aid/" target="_blank" rel="noopener noreferrer">NHS</a><span data-p3="source3">NHS: general health information and first-aid guidance</span></li>
+          </ul>
+          <small class="p3-reviewed" data-p3="reviewed">Links checked: November 2026. Review source pages for the latest guidance.</small>
+        </article>
+
+        <article class="p3-card">
+          <p class="eyebrow">07 / COMMUNITY</p>
+          <h3 data-p3="feedbackTitle">Anonymous feedback</h3>
+          <p data-p3="feedbackIntro">Tell us which part of the website was useful or what could be clearer. This prototype does not transmit your response. You can copy it and share it through PulseGuard's public channels if you wish.</p>
+          <label class="p3-feedback-label" for="feedbackText" data-p3="feedbackLabel">Your feedback (do not include names or private medical details)</label>
+          <textarea id="feedbackText" rows="4" data-p3-placeholder="feedbackPlaceholder" placeholder="What was useful? What should we improve?"></textarea>
+          <button class="button secondary p3-button" id="copyFeedback" type="button" data-p3="copyFeedback">Copy feedback</button>
+          <p class="p3-feedback" id="feedbackStatus" aria-live="polite"></p>
+        </article>
+
+        <article class="p3-card p3-impact">
+          <p class="eyebrow">08 / TRANSPARENCY</p>
+          <h3 data-p3="impactTitle">Project impact snapshot</h3>
+          <p data-p3="impactIntro">These are early project indicators, not evidence of improved health outcomes.</p>
+          <div class="p3-impact-grid">
+            <div><strong>6</strong><span data-p3="impactSurvey">Survey responses</span></div>
+            <div><strong>6/6</strong><span data-p3="impactInterest">Interested or maybe interested in a free resource</span></div>
+            <div><strong id="impactChecklist">0/6</strong><span data-p3="impactChecklist">Checklist completion</span></div>
+          </div>
+          <small data-p3="impactLocal">Your checklist progress is calculated on this device only. It is not included in public project statistics.</small>
+        </article>
+      </div>
+      <div class="p3-disclaimer"><strong data-p3="disclaimerTitle">Important note</strong><p data-p3="disclaimerText">PulseGuard is an independent educational project. It does not provide emergency response, diagnosis, treatment or professional medical advice. In an emergency, contact local emergency services and follow qualified instructions.</p></div>
+    </section>
+
+    <section class="closing" id="contact">
       <p class="eyebrow" data-i18n="closingEyebrow">BE PART OF THE CONVERSATION</p>
       <h2 data-i18n="closingTitle">Better preparedness begins with better questions.</h2>
       <p data-i18n="closingText">Follow PulseGuard as the project develops its research, resources, and community feedback process.</p>

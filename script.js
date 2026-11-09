@@ -116,6 +116,8 @@ function renderCharts(language) {
   }).join("");
 }
 
+const phase3Translations = {"en":{"p3Eyebrow":"PRACTICAL TOOLS / 02","p3Title":"Make preparedness part of your household routine.","p3Intro":"Use these educational tools to organize information, learn the basics and reflect on what your household may need. No personal information is sent to PulseGuard.","checkTitle":"Family preparedness checklist","checkIntro":"Mark the items your household has discussed or prepared. Your progress is saved only in this browser.","check1":"Know the local emergency number and how to contact emergency services","check2":"Choose a family meeting place and an out-of-area contact","check3":"Keep important phone numbers accessible","check4":"Know where essential medicines and allergy information are recorded","check5":"Discuss who may need extra help during an emergency","check6":"Keep a basic first-aid kit and check its contents regularly","progressLabel":"Your checklist progress","reset":"Reset checklist","cardTitle":"Emergency information card","cardIntro":"Fill in only what you choose. This tool does not save or send the details. Print the card and keep it somewhere safe.","personLabel":"Name","contactLabel":"Emergency contact and phone","allergyLabel":"Allergies or important medical notes","medLabel":"Medicines (if relevant)","doctorLabel":"Doctor or clinic (optional)","printCard":"Print information card","quizTitle":"Quick knowledge check","quizIntro":"Choose an answer to test your understanding. This is general education, not medical training.","quizQ":"What is a sensible first step when making a household emergency plan?","quizA":"Agree on how family members will contact one another and where to meet","quizB":"Wait until an emergency happens","quizC":"Rely on remembering every phone number","checkAnswer":"Check answer","quizHint":"Select an answer, then check it.","mythTitle":"Myth vs. fact","myth":"MYTH","fact":"FACT","mythText":"“If everyone has a mobile phone, a family communication plan is unnecessary.”","factText":"A plan is still useful. Phones may be unavailable, batteries may run out, or networks may be disrupted. Agree on backup ways to communicate and meet.","scenarioTitle":"Think through a household scenario","scenarioText":"A family member cannot be reached during an urgent situation. What can help your household respond in an organized way?","scenarioReveal":"Show planning points","scenarioAnswer":"A household plan can include an agreed meeting place, an out-of-area contact, accessible emergency numbers and a clear way to share essential information. Follow local emergency-service guidance.","sourceTitle":"Trusted learning sources","sourceIntro":"Use recognized organizations for further learning. Always follow local emergency-service instructions.","source1":"World Health Organization: health topics and public-health guidance","source2":"International Federation of Red Cross and Red Crescent Societies: first aid and community preparedness","source3":"NHS: general health information and first-aid guidance","reviewed":"Links checked: November 2026. Review source pages for the latest guidance.","feedbackTitle":"Anonymous feedback","feedbackIntro":"Tell us which part of the website was useful or what could be clearer. This prototype does not transmit your response. You can copy it and share it through PulseGuard's public channels if you wish.","feedbackLabel":"Your feedback (do not include names or private medical details)","feedbackPlaceholder":"What was useful? What should we improve?","copyFeedback":"Copy feedback","feedbackStatus":"Your feedback is ready to copy. It has not been sent.","impactTitle":"Project impact snapshot","impactIntro":"These are early project indicators, not evidence of improved health outcomes.","impactSurvey":"Survey responses","impactInterest":"Interested or maybe interested in a free resource","impactChecklist":"Checklist completion","impactLocal":"Your checklist progress is calculated on this device only. It is not included in public project statistics.","disclaimerTitle":"Important note","disclaimerText":"PulseGuard is an independent educational project. It does not provide emergency response, diagnosis, treatment or professional medical advice. In an emergency, contact local emergency services and follow qualified instructions."},"uz":{"p3Eyebrow":"AMALIY VOSITALAR / 02","p3Title":"Tayyorgarlikni oilaviy odatga aylantiring.","p3Intro":"Ma’lumotlarni tartibga solish, asosiy bilimlarni o‘rganish va oilangiz ehtiyojlarini ko‘rib chiqish uchun ushbu ta’limiy vositalardan foydalaning. Shaxsiy ma’lumotlar PulseGuard’ga yuborilmaydi.","checkTitle":"Oilaviy tayyorgarlik ro‘yxati","checkIntro":"Oilaviy muhokama qilingan yoki tayyorlangan bandlarni belgilang. Jarayon faqat shu brauzerda saqlanadi.","check1":"Mahalliy favqulodda raqamni va xizmatlarga qanday murojaat qilishni bilish","check2":"Oila uchrashadigan joy va boshqa hududdagi aloqa shaxsini belgilash","check3":"Muhim telefon raqamlarini qulay joyda saqlash","check4":"Muhim dorilar va allergiya ma’lumotlari qayerda yozilganini bilish","check5":"Favqulodda vaziyatda qo‘shimcha yordamga muhtoj bo‘lishi mumkin bo‘lganlarni muhokama qilish","check6":"Oddiy birinchi yordam to‘plamini saqlash va tarkibini muntazam tekshirish","progressLabel":"Ro‘yxat bajarilishi","reset":"Ro‘yxatni tiklash","cardTitle":"Favqulodda ma’lumot kartasi","cardIntro":"Faqat o‘zingiz xohlagan ma’lumotlarni kiriting. Ushbu vosita ma’lumotlarni saqlamaydi yoki yubormaydi. Kartani chop etib, xavfsiz joyda saqlang.","personLabel":"Ism","contactLabel":"Favqulodda aloqa va telefon","allergyLabel":"Allergiyalar yoki muhim tibbiy qaydlar","medLabel":"Dorilar (tegishli bo‘lsa)","doctorLabel":"Shifokor yoki klinika (ixtiyoriy)","printCard":"Kartani chop etish","quizTitle":"Qisqa bilim sinovi","quizIntro":"Tushunchangizni tekshirish uchun javobni tanlang. Bu umumiy ta’lim, tibbiy tayyorgarlik emas.","quizQ":"Oilaviy favqulodda reja tuzishda oqilona birinchi qadam qaysi?","quizA":"Oila a’zolari qanday bog‘lanishi va qayerda uchrashishini kelishib olish","quizB":"Favqulodda vaziyat yuz berishini kutish","quizC":"Barcha telefon raqamlarini yodda saqlashga tayanish","checkAnswer":"Javobni tekshirish","quizHint":"Javobni tanlang, so‘ng tekshiring.","mythTitle":"Afsona va haqiqat","myth":"AFSONA","fact":"HAQIQAT","mythText":"“Hamma oilada telefon bo‘lsa, aloqa rejasi kerak emas.”","factText":"Reja baribir foydali. Telefon ishlamasligi, quvvati tugashi yoki tarmoq uzilishi mumkin. Zaxira aloqa va uchrashuv usullarini kelishib oling.","scenarioTitle":"Oilaviy vaziyatni tasavvur qiling","scenarioText":"Shoshilinch vaziyatda oila a’zosi bilan bog‘lanib bo‘lmadi. Oilangiz tartibli harakat qilishi uchun nima yordam beradi?","scenarioReveal":"Reja bandlarini ko‘rsatish","scenarioAnswer":"Oilaviy rejada uchrashuv joyi, boshqa hududdagi aloqa shaxsi, favqulodda raqamlar va muhim ma’lumotlarni ulashish usuli bo‘lishi mumkin. Mahalliy favqulodda xizmatlar ko‘rsatmalariga amal qiling.","sourceTitle":"Ishonchli ta’lim manbalari","sourceIntro":"Qo‘shimcha bilim uchun tan olingan tashkilotlardan foydalaning. Har doim mahalliy favqulodda xizmatlar ko‘rsatmalariga amal qiling.","source1":"Jahon sog‘liqni saqlash tashkiloti: sog‘liq mavzulari va jamoat salomatligi","source2":"Xalqaro Qizil Xoch va Qizil Yarim Oy jamiyatlari federatsiyasi: birinchi yordam va tayyorgarlik","source3":"NHS: umumiy sog‘liq ma’lumotlari va birinchi yordam bo‘yicha yo‘riqnomalar","reviewed":"Havolalar tekshirilgan sana: 2026-yil noyabr. Eng so‘nggi ko‘rsatmalarni manba sahifalaridan tekshiring.","feedbackTitle":"Anonim fikr-mulohaza","feedbackIntro":"Saytning qaysi qismi foydali bo‘lganini yoki nimani yaxshilash mumkinligini yozing. Ushbu sinov versiyasi javobingizni yubormaydi. Xohlasangiz, uni nusxalab, PulseGuard’ning ochiq kanallari orqali ulashishingiz mumkin.","feedbackLabel":"Fikringiz (ism yoki shaxsiy tibbiy ma’lumotlarni kiritmang)","feedbackPlaceholder":"Nima foydali bo‘ldi? Nimani yaxshilash kerak?","copyFeedback":"Fikrni nusxalash","feedbackStatus":"Fikringiz nusxalash uchun tayyor. U yuborilmadi.","impactTitle":"Loyiha ta’siri: dastlabki ko‘rsatkichlar","impactIntro":"Bu dastlabki loyiha ko‘rsatkichlari, sog‘liq natijalari yaxshilanganining isboti emas.","impactSurvey":"So‘rov javoblari","impactInterest":"Bepul resursga qiziqqan yoki ehtimol qiziqqanlar","impactChecklist":"Ro‘yxat bajarilishi","impactLocal":"Ro‘yxat natijasi faqat ushbu qurilmada hisoblanadi. U loyiha statistikalariga qo‘shilmaydi.","disclaimerTitle":"Muhim eslatma","disclaimerText":"PulseGuard mustaqil ta’limiy loyihadir. U favqulodda yordam, tashxis, davolash yoki professional tibbiy maslahat bermaydi. Favqulodda vaziyatda mahalliy xizmatlarga murojaat qiling va malakali mutaxassislar ko‘rsatmalariga amal qiling."},"ru":{"p3Eyebrow":"ПРАКТИЧЕСКИЕ ИНСТРУМЕНТЫ / 02","p3Title":"Сделайте подготовку частью семейной привычки.","p3Intro":"Используйте эти образовательные инструменты, чтобы упорядочить информацию, изучить основы и обсудить потребности семьи. Личные данные не отправляются PulseGuard.","checkTitle":"Семейный список готовности","checkIntro":"Отмечайте пункты, которые семья обсудила или подготовила. Отметки сохраняются только в этом браузере.","check1":"Знать местный номер экстренной службы и способы обращения за помощью","check2":"Выбрать место встречи семьи и контактного человека вне вашего района","check3":"Хранить важные номера телефонов в доступном месте","check4":"Знать, где записаны сведения о важных лекарствах и аллергиях","check5":"Обсудить, кому может понадобиться дополнительная помощь","check6":"Иметь базовую аптечку первой помощи и регулярно проверять её содержимое","progressLabel":"Прогресс списка","reset":"Сбросить список","cardTitle":"Карточка экстренной информации","cardIntro":"Заполняйте только те поля, которые считаете нужными. Данные не сохраняются и не отправляются. Распечатайте карточку и храните её в безопасном месте.","personLabel":"Имя","contactLabel":"Экстренный контакт и телефон","allergyLabel":"Аллергии или важные медицинские заметки","medLabel":"Лекарства (если применимо)","doctorLabel":"Врач или клиника (необязательно)","printCard":"Распечатать карточку","quizTitle":"Короткая проверка знаний","quizIntro":"Выберите ответ, чтобы проверить понимание. Это общая информация, а не медицинское обучение.","quizQ":"Какой разумный первый шаг при составлении семейного плана на экстренный случай?","quizA":"Договориться, как связаться друг с другом и где встретиться","quizB":"Ждать, пока произойдёт чрезвычайная ситуация","quizC":"Полагаться на память при запоминании всех номеров","checkAnswer":"Проверить ответ","quizHint":"Выберите ответ, затем проверьте его.","mythTitle":"Миф и факт","myth":"МИФ","fact":"ФАКТ","mythText":"«Если у всех есть мобильный телефон, семейный план связи не нужен».","factText":"План всё равно полезен. Телефон может быть недоступен, батарея может разрядиться, а сеть может не работать. Договоритесь о запасных способах связи и месте встречи.","scenarioTitle":"Обсудите семейную ситуацию","scenarioText":"Во время срочной ситуации не удаётся связаться с членом семьи. Что поможет действовать организованно?","scenarioReveal":"Показать пункты плана","scenarioAnswer":"План может включать место встречи, контактного человека вне района, доступные номера экстренных служб и способ передачи важной информации. Следуйте указаниям местных экстренных служб.","sourceTitle":"Надёжные образовательные источники","sourceIntro":"Для дальнейшего обучения используйте материалы признанных организаций. Всегда следуйте указаниям местных экстренных служб.","source1":"Всемирная организация здравоохранения: темы здоровья и рекомендации по общественному здоровью","source2":"Международная федерация обществ Красного Креста и Красного Полумесяца: первая помощь и готовность сообществ","source3":"NHS: общая информация о здоровье и рекомендации по первой помощи","reviewed":"Ссылки проверены: ноябрь 2026 года. Проверяйте страницы источников на актуальность.","feedbackTitle":"Анонимный отзыв","feedbackIntro":"Напишите, что было полезно или что можно сделать понятнее. Эта версия не отправляет ваш ответ. При желании скопируйте его и поделитесь через открытые каналы PulseGuard.","feedbackLabel":"Ваш отзыв (не указывайте имена или личные медицинские сведения)","feedbackPlaceholder":"Что было полезно? Что стоит улучшить?","copyFeedback":"Скопировать отзыв","feedbackStatus":"Отзыв готов к копированию. Он не был отправлен.","impactTitle":"Показатели проекта","impactIntro":"Это предварительные показатели проекта, а не доказательство улучшения состояния здоровья.","impactSurvey":"Ответы на опрос","impactInterest":"Заинтересованы или, возможно, заинтересованы в бесплатном ресурсе","impactChecklist":"Прогресс списка","impactLocal":"Прогресс рассчитывается только на этом устройстве и не включается в публичную статистику проекта.","disclaimerTitle":"Важное примечание","disclaimerText":"PulseGuard — независимый образовательный проект. Он не предоставляет экстренную помощь, диагностику, лечение или профессиональные медицинские консультации. В экстренной ситуации обратитесь в местную службу экстренной помощи и следуйте указаниям специалистов."}};
+
 function changeLanguage(language) {
   const selected = translations[language] || translations.en;
   document.documentElement.lang = language;
@@ -149,3 +151,83 @@ navigation.querySelectorAll("a").forEach(link => {
   });
 });
       
+
+
+// Phase 3: checklist progress is stored only in this browser.
+const prepChecks = [...document.querySelectorAll(".prep-check")];
+const checklistKey = "pulseguard-phase3-checklist";
+function updateChecklist() {
+  const completed = prepChecks.filter(item => item.checked).length;
+  const percent = Math.round((completed / prepChecks.length) * 100);
+  document.querySelector("#checkProgress").textContent = `${completed}/${prepChecks.length} · ${percent}%`;
+  document.querySelector("#checkProgressBar").style.width = `${percent}%`;
+  document.querySelector("#impactChecklist").textContent = `${completed}/${prepChecks.length}`;
+  try { localStorage.setItem(checklistKey, JSON.stringify(prepChecks.map(item => item.checked))); } catch (error) {}
+}
+try {
+  const savedChecks = JSON.parse(localStorage.getItem(checklistKey) || "[]");
+  prepChecks.forEach((item, index) => item.checked = Boolean(savedChecks[index]));
+} catch (error) {}
+prepChecks.forEach(item => item.addEventListener("change", updateChecklist));
+document.querySelector("#resetChecklist").addEventListener("click", () => {
+  prepChecks.forEach(item => item.checked = false);
+  updateChecklist();
+});
+updateChecklist();
+
+// Printable card: entered information is used for printing only and is not stored.
+document.querySelector("#printCard").addEventListener("click", () => {
+  const fields = [
+    ["Name", document.querySelector("#cardName").value],
+    ["Emergency contact", document.querySelector("#cardContact").value],
+    ["Allergies / medical notes", document.querySelector("#cardAllergies").value],
+    ["Medicines", document.querySelector("#cardMeds").value],
+    ["Doctor / clinic", document.querySelector("#cardDoctor").value]
+  ];
+  const target = document.querySelector("#printableCard");
+  target.innerHTML = `<h2>PulseGuard · Emergency Information</h2>` + fields.map(([label,value]) =>
+    `<p><strong>${label}</strong><br>${escapePrintText(value) || "—"}</p>`).join("") +
+    `<small>Keep this information private and update it when details change. In an emergency, contact local emergency services.</small>`;
+  target.setAttribute("aria-hidden","false");
+  window.print();
+  target.setAttribute("aria-hidden","true");
+});
+function escapePrintText(value) {
+  return String(value).replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
+}
+
+// Educational quiz.
+document.querySelector("#checkQuiz").addEventListener("click", () => {
+  const chosen = document.querySelector('input[name="p3quiz"]:checked');
+  const feedback = document.querySelector("#quizFeedback");
+  if (!chosen) {
+    feedback.textContent = phase3Translations[languageSelect.value].quizHint;
+    return;
+  }
+  const correct = chosen.value === "correct";
+  feedback.textContent = correct
+    ? (languageSelect.value === "uz" ? "To‘g‘ri. Oldindan kelishilgan aloqa va uchrashuv rejasi foydali." : languageSelect.value === "ru" ? "Верно. Заранее согласованный план связи и встречи полезен." : "Correct. An agreed communication and meeting plan is useful.")
+    : (languageSelect.value === "uz" ? "Qayta urinib ko‘ring. Reja favqulodda vaziyatdan oldin tuziladi." : languageSelect.value === "ru" ? "Попробуйте ещё раз. План составляют заранее." : "Try again. A plan is made before an emergency happens.");
+});
+document.querySelector("#scenarioToggle").addEventListener("click", event => {
+  const answer = document.querySelector("#scenarioAnswer");
+  const open = answer.hidden;
+  answer.hidden = !open;
+  event.currentTarget.setAttribute("aria-expanded", String(open));
+});
+
+// Feedback stays on the visitor's device. Copying is an explicit user action.
+document.querySelector("#copyFeedback").addEventListener("click", async () => {
+  const value = document.querySelector("#feedbackText").value.trim();
+  const status = document.querySelector("#feedbackStatus");
+  if (!value) {
+    status.textContent = languageSelect.value === "uz" ? "Avval fikringizni yozing." : languageSelect.value === "ru" ? "Сначала напишите отзыв." : "Please write your feedback first.";
+    return;
+  }
+  try {
+    await navigator.clipboard.writeText(value);
+    status.textContent = phase3Translations[languageSelect.value].feedbackStatus;
+  } catch (error) {
+    status.textContent = languageSelect.value === "uz" ? "Nusxalash imkoni bo‘lmadi. Matnni qo‘lda belgilang." : languageSelect.value === "ru" ? "Не удалось скопировать. Выделите текст вручную." : "Copy was unavailable. Please select and copy the text manually.";
+  }
+});

@@ -188,3 +188,53 @@ footer small { color:#7886A2; font-size:.74rem; }
 @media (prefers-reduced-motion:reduce) {
   *, *::before, *::after { scroll-behavior:auto !important; transition:none !important; animation:none !important; }
 } 
+
+
+/* Phase 3 additions: use the existing PulseGuard palette and visual language. */
+.phase3-section { border-top: 1px solid var(--line); }
+.p3-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; margin-top:38px; }
+.p3-card { min-width:0; padding:26px; border:1px solid var(--line); border-radius:var(--radius); background:linear-gradient(145deg,rgba(16,31,61,.88),rgba(11,23,48,.94)); box-shadow:0 16px 45px rgba(0,0,0,.12); }
+.p3-card h3 { margin:7px 0 9px; font:800 1.35rem 'Manrope',sans-serif; letter-spacing:-.03em; }
+.p3-card > p:not(.eyebrow) { color:var(--muted); font-size:.94rem; }
+.p3-card .eyebrow { color:var(--coral); font-size:.7rem; letter-spacing:.13em; font-weight:700; }
+.p3-progress { margin:22px 0 18px; }
+.p3-progress-top { display:flex; justify-content:space-between; gap:12px; font-size:.82rem; color:var(--muted); }
+.p3-progress-top strong { color:var(--coral); white-space:nowrap; }
+.p3-progress-track { height:8px; margin-top:9px; border-radius:99px; overflow:hidden; background:rgba(169,180,204,.15); }
+.p3-progress-track span { display:block; width:0; height:100%; border-radius:inherit; background:linear-gradient(90deg,var(--azure),var(--coral)); transition:width .25s ease; }
+.p3-checks { display:grid; gap:13px; }
+.p3-checks label,.p3-quiz label { display:flex; align-items:flex-start; gap:11px; color:var(--text); font-size:.9rem; cursor:pointer; }
+.p3-checks input,.p3-quiz input { margin-top:5px; accent-color:var(--azure-bright); flex:0 0 auto; }
+.p3-button { margin-top:17px; cursor:pointer; }
+.p3-form { display:grid; gap:12px; margin-top:17px; }
+.p3-form label,.p3-feedback-label { display:grid; gap:6px; color:var(--muted); font-size:.82rem; }
+.p3-form input,.p3-form textarea,.p3-card > textarea { width:100%; padding:11px 13px; border:1px solid var(--line); border-radius:10px; color:var(--text); background:rgba(1,5,17,.55); font:inherit; resize:vertical; }
+.p3-form input:focus,.p3-form textarea:focus,.p3-card > textarea:focus { outline:2px solid var(--azure-bright); outline-offset:2px; }
+.p3-quiz { border:0; padding:0; margin:18px 0 0; }
+.p3-quiz legend { margin-bottom:14px; font-weight:700; line-height:1.5; }
+.p3-quiz label { margin:12px 0; color:var(--muted); }
+.p3-feedback { min-height:1.5em; color:var(--coral)!important; font-size:.84rem!important; }
+.myth-labels { display:flex; gap:9px; margin:20px 0 10px; }
+.myth-labels span { padding:4px 10px; border-radius:6px; background:rgba(254,177,146,.13); color:var(--coral); font-size:.7rem; font-weight:800; letter-spacing:.08em; }
+.myth-labels span+span { color:#9DBBFF; background:rgba(45,107,255,.15); }
+.myth-quote { color:var(--text)!important; font:700 1.1rem 'Manrope',sans-serif; }
+.scenario-answer { margin-top:16px; padding:14px; border-left:3px solid var(--coral); border-radius:0 10px 10px 0; background:rgba(254,177,146,.07); }
+.p3-sources { display:grid; gap:14px; padding-left:20px; color:var(--muted); font-size:.87rem; }
+.p3-sources a { color:#9DBBFF; font-weight:800; margin-right:5px; text-decoration:underline; text-underline-offset:3px; }
+.p3-reviewed,.p3-impact small { display:block; margin-top:16px; color:var(--muted); font-size:.75rem; }
+.p3-impact-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin-top:20px; }
+.p3-impact-grid div { padding:15px 11px; border:1px solid var(--line); border-radius:12px; background:rgba(1,5,17,.3); }
+.p3-impact-grid strong { display:block; color:var(--coral); font:800 1.65rem 'Manrope',sans-serif; }
+.p3-impact-grid span { display:block; margin-top:5px; color:var(--muted); font-size:.74rem; line-height:1.4; }
+.p3-disclaimer { margin-top:22px; padding:20px 23px; border:1px solid rgba(254,177,146,.25); border-radius:14px; background:rgba(254,177,146,.055); }
+.p3-disclaimer strong { color:var(--coral); }
+.p3-disclaimer p { margin:5px 0 0; color:var(--muted); font-size:.87rem; }
+@media(max-width:760px) { .p3-grid { grid-template-columns:1fr; } .p3-card { padding:22px; } }
+@media print {
+  body * { visibility:hidden!important; }
+  #printableCard,#printableCard * { visibility:visible!important; }
+  #printableCard { display:block!important; position:absolute; left:0; top:0; width:100%; padding:28px; color:#111!important; background:#fff!important; font:14px Arial,sans-serif; }
+  #printableCard h2 { color:#111!important; border-bottom:2px solid #0046DE; padding-bottom:10px; }
+  #printableCard p { margin:16px 0; color:#111!important; }
+  #printableCard small { color:#444!important; }
+}
