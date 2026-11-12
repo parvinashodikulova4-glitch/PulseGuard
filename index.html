@@ -19,6 +19,7 @@
       <a href="#research" data-i18n="navResearch">Research</a>
       <a href="#resources" data-i18n="navResources">Resources</a>
       <a href="#tools">Toolkit</a>
+      <a href="#medical-mission" id="missionNav">Medical Mission</a>
       <a href="#contact" data-i18n="navContact">Contact</a>
     </nav>
     <label class="language-wrap">
@@ -230,6 +231,46 @@
         </article>
       </div>
       <div class="p3-disclaimer"><strong data-p3="disclaimerTitle">Important note</strong><p data-p3="disclaimerText">PulseGuard is an independent educational project. It does not provide emergency response, diagnosis, treatment or professional medical advice. In an emergency, contact local emergency services and follow qualified instructions.</p></div>
+    </section>
+
+
+    <section class="section mission-section" id="medical-mission">
+      <div class="section-intro">
+        <p class="eyebrow" id="missionEyebrow">INTERACTIVE LEARNING / 03</p>
+        <h2 id="missionTitle">PulseGuard Medical Mission</h2>
+        <p id="missionIntro">Five random questions each round. Learn everyday health essentials, collect achievements and guide the ambulance to the hospital.</p>
+      </div>
+      <div class="mission-shell" id="missionApp">
+        <div class="mission-topline"><span id="missionRoundLabel">YOUR MISSION</span><span id="missionBankLabel">100-question learning bank</span></div>
+        <div class="mission-hero">
+          <div class="mission-track-wrap">
+            <div class="mission-progress-meta"><span id="missionProgressLabel">Journey progress</span><strong id="missionProgressText">0 / 5</strong></div>
+            <div class="mission-track"><span id="missionTrackFill"></span></div>
+            <div class="mission-route"><span class="mission-start">START</span><span class="mission-ambulance" id="missionAmbulance" aria-label="Ambulance">🚑</span><span class="mission-hospital">🏥</span></div>
+          </div>
+          <div class="mission-score"><span id="missionScoreLabel">Correct</span><strong id="missionScore">0</strong><small id="missionScoreOutOf">out of 5</small></div>
+        </div>
+        <div id="missionWelcome" class="mission-welcome">
+          <div class="mission-icon">✚</div><h3 id="missionWelcomeTitle">Ready for your medical mission?</h3>
+          <p id="missionWelcomeText">Answer five randomly selected questions. Each correct answer moves the ambulance closer to the hospital. Read the explanation and source after every answer.</p>
+          <button class="button primary" id="missionStart" type="button">Start mission</button>
+        </div>
+        <div id="missionQuestionArea" class="mission-question-area" hidden>
+          <div class="mission-question-meta"><span id="missionQuestionCount">QUESTION 1 OF 5</span><span id="missionCategory">EVERYDAY HEALTH</span></div>
+          <h3 id="missionQuestion">Question text</h3>
+          <div class="mission-options" id="missionOptions"></div>
+          <div id="missionFeedback" class="mission-feedback" aria-live="polite" hidden></div>
+          <div class="mission-actions"><button class="button primary" id="missionCheck" type="button" disabled>Check answer</button><button class="button secondary" id="missionNext" type="button" hidden>Next question</button></div>
+        </div>
+        <div id="missionResult" class="mission-result" hidden>
+          <div class="mission-trophy" id="missionTrophy">🏆</div><p class="eyebrow" id="missionResultEyebrow">MISSION COMPLETE</p><h3 id="missionResultTitle">Well done!</h3><p id="missionResultText"></p>
+          <div class="mission-result-score"><strong id="missionFinalScore">0/5</strong><span id="missionFinalPercent">0%</span></div>
+          <div class="mission-achievement" id="missionAchievement"></div>
+          <div class="mission-actions"><button class="button primary" id="missionAgain" type="button">Play another round</button></div>
+          <p class="mission-small" id="missionResultNote">This is an educational game, not medical training or a qualification.</p>
+        </div>
+        <div class="mission-footnote" id="missionFootnote">Questions are educational and reviewed against the linked guidance. Follow local emergency services and qualified professionals.</div>
+      </div>
     </section>
 
     <section class="closing" id="contact">

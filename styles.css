@@ -238,3 +238,57 @@ footer small { color:#7886A2; font-size:.74rem; }
   #printableCard p { margin:16px 0; color:#111!important; }
   #printableCard small { color:#444!important; }
 }
+
+
+/* PulseGuard Medical Mission: an added section using the existing palette. */
+.mission-section { border-top:1px solid var(--line); }
+.mission-shell { max-width:900px; margin:38px auto 0; padding:clamp(20px,4vw,36px); border:1px solid var(--line); border-radius:22px; background:linear-gradient(145deg,rgba(16,31,61,.96),rgba(5,13,29,.98)); box-shadow:0 24px 65px rgba(0,0,0,.22); }
+.mission-topline,.mission-progress-meta,.mission-question-meta { display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:.72rem; font-weight:800; letter-spacing:.1em; }
+.mission-topline span:first-child,.mission-question-meta span:last-child { color:var(--coral); }
+.mission-hero { display:grid; grid-template-columns:1fr auto; gap:24px; align-items:center; margin:24px 0 30px; }
+.mission-progress-meta { letter-spacing:0; font-size:.8rem; font-weight:600; }
+.mission-progress-meta strong { color:var(--text); }
+.mission-track { height:10px; margin-top:10px; border-radius:99px; background:rgba(169,180,204,.16); overflow:hidden; }
+.mission-track span { display:block; width:0; height:100%; border-radius:inherit; background:linear-gradient(90deg,var(--azure),var(--coral)); transition:width .55s ease; }
+.mission-route { height:55px; display:flex; align-items:center; justify-content:space-between; position:relative; margin-top:5px; }
+.mission-route:before { content:""; position:absolute; left:22px; right:28px; top:27px; border-top:2px dashed rgba(169,180,204,.38); }
+.mission-start,.mission-hospital,.mission-ambulance { position:relative; z-index:1; }
+.mission-start { color:var(--muted); font-size:.58rem; font-weight:800; background:#0b1730; padding-right:7px; }
+.mission-hospital { font-size:1.7rem; background:#0b1730; padding-left:7px; }
+.mission-ambulance { position:absolute; left:0; top:6px; font-size:2rem; transition:left .65s cubic-bezier(.2,.8,.2,1); filter:drop-shadow(0 5px 9px rgba(0,0,0,.3)); }
+.mission-score { min-width:95px; padding:14px 17px; text-align:center; border:1px solid var(--line); border-radius:15px; background:rgba(1,5,17,.35); }
+.mission-score span,.mission-score small { display:block; color:var(--muted); font-size:.7rem; }
+.mission-score strong { display:block; color:var(--coral); font:800 2rem 'Manrope',sans-serif; }
+.mission-welcome { padding:26px 18px 12px; text-align:center; }
+.mission-icon { display:grid; place-items:center; width:58px; height:58px; margin:0 auto 15px; border-radius:18px; color:#fff; background:linear-gradient(135deg,var(--azure),#173b83); font-size:1.8rem; }
+.mission-welcome h3,.mission-result h3 { margin:8px 0; font:800 clamp(1.35rem,3vw,1.8rem) 'Manrope',sans-serif; }
+.mission-welcome p,.mission-result>p:not(.eyebrow) { max-width:620px; margin:10px auto 22px; color:var(--muted); line-height:1.7; }
+.mission-question-area { padding-top:5px; }
+.mission-question-meta { margin-bottom:15px; }
+.mission-question-area h3 { max-width:760px; margin:0 0 20px; font:800 clamp(1.2rem,2.7vw,1.55rem) 'Manrope',sans-serif; line-height:1.45; }
+.mission-options { display:grid; grid-template-columns:1fr 1fr; gap:11px; }
+.mission-option { display:flex; align-items:flex-start; gap:12px; min-height:65px; padding:15px; text-align:left; border:1px solid var(--line); border-radius:13px; color:var(--text); background:rgba(1,5,17,.34); cursor:pointer; font:inherit; line-height:1.45; transition:border-color .2s,background .2s,transform .2s; }
+.mission-option:hover:not(:disabled) { border-color:var(--azure-bright); transform:translateY(-1px); }
+.mission-option .option-letter { flex:0 0 27px; display:grid; place-items:center; width:27px; height:27px; border-radius:8px; color:#a9c6ff; background:rgba(45,107,255,.18); font-size:.78rem; font-weight:800; }
+.mission-option.selected { border-color:var(--azure-bright); background:rgba(45,107,255,.12); }
+.mission-option.correct { border-color:#45b985; background:rgba(69,185,133,.1); }
+.mission-option.incorrect { border-color:#d77d79; background:rgba(215,125,121,.1); }
+.mission-option:disabled { cursor:default; }
+.mission-feedback { margin-top:17px; padding:16px; border:1px solid var(--line); border-left:3px solid var(--azure-bright); border-radius:12px; background:rgba(1,5,17,.35); color:var(--muted); line-height:1.65; }
+.mission-feedback.is-correct { border-left-color:#45b985; }
+.mission-feedback strong { color:var(--text); }
+.mission-feedback a { color:#a9c6ff; text-decoration:underline; text-underline-offset:3px; }
+.mission-actions { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:22px; }
+.mission-actions button:disabled { opacity:.45; cursor:not-allowed; }
+.mission-result { padding:18px 10px 5px; text-align:center; }
+.mission-trophy { font-size:4rem; margin-bottom:8px; filter:drop-shadow(0 7px 15px rgba(254,177,146,.2)); }
+.mission-result .eyebrow { color:var(--coral); }
+.mission-result-score { display:flex; justify-content:center; align-items:baseline; gap:14px; margin:22px 0; }
+.mission-result-score strong { font:800 2.6rem 'Manrope',sans-serif; color:var(--coral); }
+.mission-result-score span { color:var(--muted); }
+.mission-achievement { max-width:440px; margin:0 auto; padding:17px; border:1px solid rgba(254,177,146,.25); border-radius:14px; background:rgba(254,177,146,.06); color:var(--text); font-weight:750; }
+.mission-small,.mission-footnote { color:var(--muted); font-size:.75rem; line-height:1.6; }
+.mission-small { margin-top:18px!important; }
+.mission-footnote { margin-top:23px; padding-top:15px; border-top:1px solid var(--line); text-align:center; }
+@media(max-width:650px) { .mission-hero { grid-template-columns:1fr; gap:12px; } .mission-score { justify-self:end; display:flex; align-items:center; gap:9px; padding:8px 13px; } .mission-score strong { font-size:1.4rem; } .mission-score small { display:none; } .mission-options { grid-template-columns:1fr; } .mission-option { min-height:55px; } }
+@media(prefers-reduced-motion:reduce) { .mission-ambulance,.mission-track span,.mission-option { transition:none!important; } }
