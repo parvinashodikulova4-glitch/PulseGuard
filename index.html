@@ -1,313 +1,253 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PulseGuard explores household emergency preparedness through community feedback and accessible public-health education.">
-  <meta name="theme-color" content="#010511">
-  <title>PulseGuard | Preparedness starts before an emergency</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="PulseGuard explores household emergency preparedness through community feedback and accessible public-health education." name="description"/>
+<meta content="#010511" name="theme-color"/>
+<title>PulseGuard | Preparedness starts before an emergency</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="header">
-    <a href="#home" class="brand" aria-label="PulseGuard home">
-      <span class="brand-icon">✚</span><span>PulseGuard</span>
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-    <nav id="nav">
-      <a href="#about" data-i18n="navAbout">About</a>
-      <a href="#research" data-i18n="navResearch">Research</a>
-      <a href="#resources" data-i18n="navResources">Resources</a>
-      <a href="#tools">Toolkit</a>
-      <a href="#medical-mission" id="missionNav">Medical Mission</a>
-      <a href="#contact" data-i18n="navContact">Contact</a>
-    </nav>
-    <label class="language-wrap">
-      <span class="sr-only" data-i18n="languageLabel">Language</span>
-      <select id="languageSelect" aria-label="Select language">
-        <option value="en">EN</option><option value="uz">UZ</option><option value="ru">RU</option>
-      </select>
-    </label>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="eyebrow" data-i18n="eyebrow">HOUSEHOLD EMERGENCY PREPAREDNESS</p>
-        <h1 data-i18n="headline">Preparedness starts <span>before</span> an emergency.</h1>
-        <p class="hero-text" data-i18n="heroText">Clear information and practical planning can help families feel more prepared to seek help when it matters.</p>
-        <div class="actions">
-          <a href="#research" class="button primary" data-i18n="primaryButton">Explore the research</a>
-          <a href="#about" class="button secondary" data-i18n="secondaryButton">About PulseGuard</a>
-        </div>
-        <p class="disclaimer" data-i18n="heroDisclaimer">An educational project. Not a replacement for emergency services or professional medical advice.</p>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="medical-card">
-          <div class="medical-cross">+</div><div class="medical-line"></div><div class="medical-line short"></div>
-          <div class="medical-heart">♡</div>
-        </div>
-        <div class="floating-tag"><span class="tag-dot"></span><span data-i18n="visualTag">Preparedness begins at home</span></div>
-      </div>
-      <div class="hero-index">01 / PULSEGUARD</div>
-    </section>
-
-    <section class="trust-strip" aria-label="Project approach">
-      <div><strong data-i18n="stripOne">Learn</strong><span data-i18n="stripOneText">Understand the basics</span></div>
-      <div><strong data-i18n="stripTwo">Prepare</strong><span data-i18n="stripTwoText">Make a family plan</span></div>
-      <div><strong data-i18n="stripThree">Share</strong><span data-i18n="stripThreeText">Build awareness together</span></div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="section-intro">
-        <p class="eyebrow" data-i18n="aboutEyebrow">WHY PULSEGUARD?</p>
-        <h2 data-i18n="aboutTitle">Preparedness should feel clear, not overwhelming.</h2>
-        <p data-i18n="aboutText">PulseGuard is a youth-led public-health education initiative exploring how families prepare for urgent medical situations and what information could help them plan ahead.</p>
-      </div>
-      <div class="values">
-        <article class="value-card"><span class="value-icon">⌕</span><h3 data-i18n="valueOneTitle">Accessible information</h3><p data-i18n="valueOneText">Present useful information in clear, understandable language.</p></article>
-        <article class="value-card"><span class="value-icon">♡</span><h3 data-i18n="valueTwoTitle">Family preparedness</h3><p data-i18n="valueTwoText">Encourage households to discuss contacts and practical plans.</p></article>
-        <article class="value-card"><span class="value-icon">✧</span><h3 data-i18n="valueThreeTitle">Community insight</h3><p data-i18n="valueThreeText">Use survey findings and feedback to guide improvements.</p></article>
-      </div>
-    </section>
-
-    <section class="research-section" id="research">
-      <div class="research-heading-row">
-        <div>
-          <p class="eyebrow" data-i18n="researchEyebrow">COMMUNITY RESEARCH / 01</p>
-          <h2 data-i18n="researchTitle">What does household preparedness look like?</h2>
-          <p class="research-lead" data-i18n="researchText">An initial survey explored preparedness, information needs, and preferred educational resources.</p>
-        </div>
-        <div class="sample-card">
-          <span class="sample-kicker" data-i18n="sampleLabel">INITIAL SURVEY</span>
-          <strong class="sample-number">06</strong>
-          <span data-i18n="respondents">respondents</span>
-          <small data-i18n="sampleNote">Six submitted responses included in this preliminary summary.</small>
-        </div> 
-      </div>
-            <div class="metric-grid">
-        <article class="metric-card"><span class="metric-label" data-i18n="metricPrepared">Felt very or somewhat prepared</span><strong>4/6</strong><span class="metric-foot" data-i18n="metricPreparedFoot">66.7% of respondents</span></article>
-        <article class="metric-card"><span class="metric-label" data-i18n="metricKnow">Definitely knew how to contact emergency services</span><strong>4/6</strong><span class="metric-foot" data-i18n="metricKnowFoot">66.7% of respondents</span></article>
-        <article class="metric-card"><span class="metric-label" data-i18n="metricWebsite">Preferred a simple website</span><strong>4/6</strong><span class="metric-foot" data-i18n="metricWebsiteFoot">66.7% of respondents</span></article>
-        <article class="metric-card"><span class="metric-label" data-i18n="metricInterest">Interested or maybe interested in a free resource</span><strong>6/6</strong><span class="metric-foot" data-i18n="metricInterestFoot">100% combined</span></article>
-      </div>
-
-      <div class="chart-intro">
-        <div><p class="eyebrow" data-i18n="breakdownEyebrow">RESPONSE BREAKDOWN</p><h3 data-i18n="breakdownTitle">Eight questions. One early snapshot.</h3></div>
-        <p data-i18n="chartHint">Bars show the share of the six respondents who selected each answer. Counts are shown beside percentages.</p>
-      </div>
-      <div id="surveyCharts" class="chart-grid" aria-live="polite"></div>
-
-      <div class="insight-panel">
-        <div class="insight-title"><p class="eyebrow" data-i18n="insightEyebrow">EARLY SIGNALS</p><h3 data-i18n="insightTitle">What we can take from this first snapshot</h3></div>
-        <div class="insight-list">
-          <article><span>01</span><div><h4 data-i18n="insightOneTitle">Preparedness is more than knowing a number</h4><p data-i18n="insightOneText">Four respondents felt very or somewhat prepared, while two reported low or no preparedness. Knowing how to contact emergency services does not automatically mean a household feels ready.</p></div></article>
-          <article><span>02</span><div><h4 data-i18n="insightTwoTitle">Clear, organized information matters</h4><p data-i18n="insightTwoText">Emergency contact numbers were the most selected information need. Not knowing what to prepare and finding trustworthy information were the most frequently selected barriers.</p></div></article>
-          <article><span>03</span><div><h4 data-i18n="insightThreeTitle">A simple website is worth testing</h4><p data-i18n="insightThreeText">Four respondents preferred a simple website. All six answered yes or maybe when asked about a free educational resource.</p></div></article>
-        </div>
-      </div>
-
-      <div class="method-note">
-        <span class="method-icon">i</span>
-        <div><strong data-i18n="methodTitle">Methodology and limitations</strong><p data-i18n="methodText">This is a descriptive summary of six survey responses. Percentages are calculated from the displayed counts and rounded to one decimal place. The sample is small and may not represent the wider community. Results are preliminary and should not be generalized.</p></div>
-      </div>
-    </section>
-
-    <section class="section resource-section" id="resources">
-      <div class="section-intro">
-        <p class="eyebrow" data-i18n="resourcesEyebrow">NEXT STEPS</p>
-        <h2 data-i18n="resourcesTitle">Turn community questions into useful resources.</h2>
-        <p data-i18n="resourcesText">PulseGuard will use feedback to shape practical planning tools and accessible educational information.</p>
-      </div>
-      <div class="resource-grid">
-        <article><span>01</span><h3 data-i18n="resourceOneTitle">Family planning</h3><p data-i18n="resourceOneText">A simple checklist to discuss with your household.</p></article>
-        <article><span>02</span><h3 data-i18n="resourceTwoTitle">Learning resources</h3><p data-i18n="resourceTwoText">Find recognized first-aid and public-health education.</p></article>
-        <article><span>03</span><h3 data-i18n="resourceThreeTitle">Research updates</h3><p data-i18n="resourceThreeText">Explore how participant feedback guides the project.</p></article>
-      </div>
-    </section>
-      
-    <section class="section phase3-section" id="tools">
-      <div class="section-intro">
-        <p class="eyebrow" data-p3="p3Eyebrow">PRACTICAL TOOLS / 02</p>
-        <h2 data-p3="p3Title">Make preparedness part of your household routine.</h2>
-        <p data-p3="p3Intro">Use these educational tools to organize information, learn the basics and reflect on what your household may need. No personal information is sent to PulseGuard.</p>
-      </div>
-
-      <div class="p3-grid">
-        <article class="p3-card p3-checklist">
-          <p class="eyebrow">01 / PULSEGUARD TOOLKIT</p>
-          <h3 data-p3="checkTitle">Family preparedness checklist</h3>
-          <p data-p3="checkIntro">Mark the items your household has discussed or prepared. Your progress is saved only in this browser.</p>
-          <div class="p3-progress"><div class="p3-progress-top"><span data-p3="progressLabel">Your checklist progress</span><strong id="checkProgress">0/6 · 0%</strong></div><div class="p3-progress-track"><span id="checkProgressBar"></span></div></div>
-          <div class="p3-checks">
-            <label><input type="checkbox" class="prep-check"><span data-p3="check1">Know the local emergency number and how to contact emergency services</span></label>
-            <label><input type="checkbox" class="prep-check"><span data-p3="check2">Choose a family meeting place and an out-of-area contact</span></label>
-            <label><input type="checkbox" class="prep-check"><span data-p3="check3">Keep important phone numbers accessible</span></label>
-            <label><input type="checkbox" class="prep-check"><span data-p3="check4">Know where essential medicines and allergy information are recorded</span></label>
-            <label><input type="checkbox" class="prep-check"><span data-p3="check5">Discuss who may need extra help during an emergency</span></label>
-            <label><input type="checkbox" class="prep-check"><span data-p3="check6">Keep a basic first-aid kit and check its contents regularly</span></label>
-          </div>
-          <button class="button secondary p3-button" id="resetChecklist" type="button" data-p3="reset">Reset checklist</button>
-        </article>
-
-        <article class="p3-card">
-          <p class="eyebrow">02 / PRINTABLE TOOL</p>
-          <h3 data-p3="cardTitle">Emergency information card</h3>
-          <p data-p3="cardIntro">Fill in only what you choose. This tool does not save or send the details. Print the card and keep it somewhere safe.</p>
-          <form id="infoCardForm" class="p3-form">
-            <label><span data-p3="personLabel">Name</span><input id="cardName" type="text" autocomplete="off"></label>
-            <label><span data-p3="contactLabel">Emergency contact and phone</span><input id="cardContact" type="text" autocomplete="off"></label>
-            <label><span data-p3="allergyLabel">Allergies or important medical notes</span><textarea id="cardAllergies" rows="2"></textarea></label>
-            <label><span data-p3="medLabel">Medicines (if relevant)</span><textarea id="cardMeds" rows="2"></textarea></label>
-            <label><span data-p3="doctorLabel">Doctor or clinic (optional)</span><input id="cardDoctor" type="text" autocomplete="off"></label>
-            <button class="button primary p3-button" type="button" id="printCard" data-p3="printCard">Print information card</button>
-          </form>
-          <div id="printableCard" class="printable-card" aria-hidden="true"></div>
-        </article>
-
-        <article class="p3-card">
-          <p class="eyebrow">03 / LEARN</p>
-          <h3 data-p3="quizTitle">Quick knowledge check</h3>
-          <p data-p3="quizIntro">Choose an answer to test your understanding. This is general education, not medical training.</p>
-          <fieldset class="p3-quiz">
-            <legend data-p3="quizQ">What is a sensible first step when making a household emergency plan?</legend>
-            <label><input type="radio" name="p3quiz" value="correct"><span data-p3="quizA">Agree on how family members will contact one another and where to meet</span></label>
-            <label><input type="radio" name="p3quiz" value="wrong"><span data-p3="quizB">Wait until an emergency happens</span></label>
-            <label><input type="radio" name="p3quiz" value="wrong"><span data-p3="quizC">Rely on remembering every phone number</span></label>
-          </fieldset>
-          <button class="button secondary p3-button" id="checkQuiz" type="button" data-p3="checkAnswer">Check answer</button>
-          <p class="p3-feedback" id="quizFeedback" aria-live="polite" data-p3="quizHint">Select an answer, then check it.</p>
-        </article>
-
-        <article class="p3-card p3-myth">
-          <p class="eyebrow">04 / THINK CRITICALLY</p>
-          <h3 data-p3="mythTitle">Myth vs. fact</h3>
-          <div class="myth-labels"><span data-p3="myth">MYTH</span><span data-p3="fact">FACT</span></div>
-          <p class="myth-quote" data-p3="mythText">“If everyone has a mobile phone, a family communication plan is unnecessary.”</p>
-          <p data-p3="factText">A plan is still useful. Phones may be unavailable, batteries may run out, or networks may be disrupted. Agree on backup ways to communicate and meet.</p>
-        </article>
-
-        <article class="p3-card">
-          <p class="eyebrow">05 / SCENARIO</p>
-          <h3 data-p3="scenarioTitle">Think through a household scenario</h3>
-          <p data-p3="scenarioText">A family member cannot be reached during an urgent situation. What can help your household respond in an organized way?</p>
-          <button class="button secondary p3-button" type="button" id="scenarioToggle" aria-expanded="false" data-p3="scenarioReveal">Show planning points</button>
-          <p class="scenario-answer" id="scenarioAnswer" hidden data-p3="scenarioAnswer">A household plan can include an agreed meeting place, an out-of-area contact, accessible emergency numbers and a clear way to share essential information. Follow local emergency-service guidance.</p>
-        </article>
-
-        <article class="p3-card">
-          <p class="eyebrow">06 / REFERENCES</p>
-          <h3 data-p3="sourceTitle">Trusted learning sources</h3>
-          <p data-p3="sourceIntro">Use recognized organizations for further learning. Always follow local emergency-service instructions.</p>
-          <ul class="p3-sources">
-            <li><a href="https://www.who.int/health-topics" target="_blank" rel="noopener noreferrer">WHO</a><span data-p3="source1">World Health Organization: health topics and public-health guidance</span></li>
-            <li><a href="https://www.ifrc.org/our-work/health-and-care/first-aid" target="_blank" rel="noopener noreferrer">IFRC</a><span data-p3="source2">International Federation of Red Cross and Red Crescent Societies: first aid and community preparedness</span></li>
-            <li><a href="https://www.nhs.uk/conditions/first-aid/" target="_blank" rel="noopener noreferrer">NHS</a><span data-p3="source3">NHS: general health information and first-aid guidance</span></li>
-          </ul>
-          <small class="p3-reviewed" data-p3="reviewed">Links checked: November 2026. Review source pages for the latest guidance.</small>
-        </article>
-
-        <article class="p3-card">
-          <p class="eyebrow">07 / COMMUNITY</p>
-          <h3 data-p3="feedbackTitle">Anonymous feedback</h3>
-          <p data-p3="feedbackIntro">Tell us which part of the website was useful or what could be clearer. This prototype does not transmit your response. You can copy it and share it through PulseGuard's public channels if you wish.</p>
-          <label class="p3-feedback-label" for="feedbackText" data-p3="feedbackLabel">Your feedback (do not include names or private medical details)</label>
-          <textarea id="feedbackText" rows="4" data-p3-placeholder="feedbackPlaceholder" placeholder="What was useful? What should we improve?"></textarea>
-          <button class="button secondary p3-button" id="copyFeedback" type="button" data-p3="copyFeedback">Copy feedback</button>
-          <p class="p3-feedback" id="feedbackStatus" aria-live="polite"></p>
-        </article>
-
-        <article class="p3-card p3-impact">
-          <p class="eyebrow">08 / TRANSPARENCY</p>
-          <h3 data-p3="impactTitle">Project impact snapshot</h3>
-          <p data-p3="impactIntro">These are early project indicators, not evidence of improved health outcomes.</p>
-          <div class="p3-impact-grid">
-            <div><strong>6</strong><span data-p3="impactSurvey">Survey responses</span></div>
-            <div><strong>6/6</strong><span data-p3="impactInterest">Interested or maybe interested in a free resource</span></div>
-            <div><strong id="impactChecklist">0/6</strong><span data-p3="impactChecklist">Checklist completion</span></div>
-          </div>
-          <small data-p3="impactLocal">Your checklist progress is calculated on this device only. It is not included in public project statistics.</small>
-        </article>
-      </div>
-      <div class="p3-disclaimer"><strong data-p3="disclaimerTitle">Important note</strong><p data-p3="disclaimerText">PulseGuard is an independent educational project. It does not provide emergency response, diagnosis, treatment or professional medical advice. In an emergency, contact local emergency services and follow qualified instructions.</p></div>
-    </section>
-
-
-    <section class="section scenario-section" id="scenario-simulator">
-      <div class="section-intro">
-        <p class="eyebrow">INTERACTIVE PRACTICE / 04</p>
-        <h2>Emergency Scenario Simulator</h2>
-        <p>Step into a fictional household situation. Choose a safe next step, learn why it matters, and build confidence in planning. This is an educational simulation, not emergency training.</p>
-      </div>
-      <div class="scenario-game" id="scenarioGame">
-        <div class="scenario-game-head"><span>✦  DECISION LAB</span><span id="scenarioStepLabel">SCENARIO 01 / 08</span></div>
-        <div class="scenario-visual"><div class="scenario-orbit"></div><img class="scenario-image" id="scenarioImage" src="" alt="Illustration of the current household preparedness scenario"><div class="scenario-visual-icon" id="scenarioVisualIcon" aria-hidden="true">🏠</div><div class="scenario-visual-caption">A FICTIONAL HOUSEHOLD SCENARIO</div></div>
-        <div class="scenario-progress"><span id="scenarioProgress"></span></div>
-        <div class="scenario-content"><p class="eyebrow" id="scenarioCategory">HOUSEHOLD PREPAREDNESS</p><h3 id="scenarioQuestion">A family member suddenly becomes very unwell at home. What is the safest first step?</h3><div class="scenario-choices" id="scenarioChoices"></div><div class="scenario-feedback" id="scenarioFeedback" aria-live="polite" hidden></div><div class="scenario-controls"><button class="button primary" id="scenarioContinue" type="button" disabled>Choose an option</button><button class="button secondary" id="scenarioRestart" type="button">Restart scenarios</button></div></div>
-        <div class="scenario-game-foot"><span>🛡️ Learn safely</span><span>🌐 EN · UZ · RU</span><span>↗ Share what you learned</span></div>
-      </div>
-      <p class="scenario-share-row"><button class="button secondary" id="scenarioShare" type="button">Share this challenge ↗</button><span id="scenarioShareStatus" aria-live="polite"></span></p>
-    </section>
-
-    <section class="section mission-section" id="medical-mission">
-      <div class="section-intro">
-        <p class="eyebrow" id="missionEyebrow">INTERACTIVE LEARNING / 03</p>
-        <h2 id="missionTitle">PulseGuard Medical Mission</h2>
-        <p id="missionIntro">Five random questions each round. Learn everyday health essentials, collect achievements and guide the ambulance to the hospital.</p>
-      </div>
-      <div class="mission-shell" id="missionApp">
-        <div class="mission-topline"><span id="missionRoundLabel">YOUR MISSION</span><span id="missionBankLabel">100-question learning bank</span></div>
-        <div class="mission-hero">
-          <div class="mission-track-wrap">
-            <div class="mission-progress-meta"><span id="missionProgressLabel">Journey progress</span><strong id="missionProgressText">0 / 5</strong></div>
-            <div class="mission-track"><span id="missionTrackFill"></span></div>
-            <div class="mission-route"><span class="mission-start">START</span><span class="mission-ambulance" id="missionAmbulance" aria-label="Ambulance">🚑</span><span class="mission-hospital">🏥</span></div>
-          </div>
-          <div class="mission-score"><span id="missionScoreLabel">Correct</span><strong id="missionScore">0</strong><small id="missionScoreOutOf">out of 5</small></div>
-        </div>
-        <div id="missionWelcome" class="mission-welcome">
-          <div class="mission-icon">✚</div><h3 id="missionWelcomeTitle">Ready for your medical mission?</h3>
-          <p id="missionWelcomeText">Answer five randomly selected questions. Each correct answer moves the ambulance closer to the hospital. Read the explanation and source after every answer.</p>
-          <button class="button primary" id="missionStart" type="button">Start mission</button>
-        </div>
-        <div id="missionQuestionArea" class="mission-question-area" hidden>
-          <div class="mission-question-meta"><span id="missionQuestionCount">QUESTION 1 OF 5</span><span id="missionCategory">EVERYDAY HEALTH</span></div>
-          <h3 id="missionQuestion">Question text</h3>
-          <div class="mission-options" id="missionOptions"></div>
-          <div id="missionFeedback" class="mission-feedback" aria-live="polite" hidden></div>
-          <div class="mission-actions"><button class="button primary" id="missionCheck" type="button" disabled>Check answer</button><button class="button secondary" id="missionNext" type="button" hidden>Next question</button></div>
-        </div>
-        <div id="missionResult" class="mission-result" hidden>
-          <div class="mission-trophy" id="missionTrophy">🏆</div><p class="eyebrow" id="missionResultEyebrow">MISSION COMPLETE</p><h3 id="missionResultTitle">Well done!</h3><p id="missionResultText"></p>
-          <div class="mission-result-score"><strong id="missionFinalScore">0/5</strong><span id="missionFinalPercent">0%</span></div>
-          <div class="mission-achievement" id="missionAchievement"></div>
-          <div class="mission-actions"><button class="button primary" id="missionAgain" type="button">Play another round</button></div>
-          <p class="mission-small" id="missionResultNote">This is an educational game, not medical training or a qualification.</p>
-        </div>
-        <div class="mission-footnote" id="missionFootnote">Questions are educational and reviewed against the linked guidance. Follow local emergency services and qualified professionals.</div>
-      </div>
-    </section>
-
-    <section class="closing" id="contact">
-      <p class="eyebrow" data-i18n="closingEyebrow">BE PART OF THE CONVERSATION</p>
-      <h2 data-i18n="closingTitle">Better preparedness begins with better questions.</h2>
-      <p data-i18n="closingText">Follow PulseGuard as the project develops its research, resources, and community feedback process.</p>
-      <a href="mailto:parvinashodikulova4@gmail.com" class="button primary" data-i18n="contactButton">Contact the project</a>
-      <p class="disclaimer dark" data-i18n="safetyNote">For an immediate emergency, contact your local emergency service. PulseGuard is educational and does not provide diagnosis or treatment.</p>
-    </section>
-  </main>
-
-  <footer>
-    <a href="#home" class="brand footer-brand"><span class="brand-icon">✚</span>PulseGuard</a>
-    <p data-i18n="footerLine">Preparedness starts before an emergency.</p>
-    <div class="social-links">
-      <a href="https://www.instagram.com/pulseguard_/" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="https://t.me/pulseguard" target="_blank" rel="noopener noreferrer">Telegram</a>
-    </div>
-    <small>© 2026 PulseGuard · <span data-i18n="footerNote">Independent educational project</span></small>
-  </footer>
-  <script src="script.js"></script>
+<header class="header">
+<a aria-label="PulseGuard home" class="brand" href="#home">
+<span class="brand-icon">✚</span><span>PulseGuard</span>
+</a>
+<button aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menuToggle">☰</button>
+<nav id="nav">
+<a data-i18n="navAbout" href="#about">About</a>
+<a href="#tools">Toolkit</a>
+<a href="#scenario-simulator">Emergency Scenario</a>
+<a href="#medical-mission" id="missionNav">Medical Mission</a>
+<a data-i18n="navResearch" href="#research">Research</a>
+<a data-i18n="navResources" href="#resources">Resources</a>
+<a data-i18n="navContact" href="#contact">Contact</a>
+</nav>
+<label class="language-wrap">
+<span class="sr-only" data-i18n="languageLabel">Language</span>
+<select aria-label="Select language" id="languageSelect">
+<option value="en">EN</option><option value="uz">UZ</option><option value="ru">RU</option>
+</select>
+</label>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="hero-content">
+<p class="eyebrow" data-i18n="eyebrow">HOUSEHOLD EMERGENCY PREPAREDNESS</p>
+<h1 data-i18n="headline">Preparedness starts <span>before</span> an emergency.</h1>
+<p class="hero-text" data-i18n="heroText">Clear information and practical planning can help families feel more prepared to seek help when it matters.</p>
+<div class="actions">
+<a class="button primary" data-i18n="primaryButton" href="#research">Explore the research</a>
+<a class="button secondary" data-i18n="secondaryButton" href="#about">About PulseGuard</a>
+</div>
+<p class="disclaimer" data-i18n="heroDisclaimer">An educational project. Not a replacement for emergency services or professional medical advice.</p>
+</div>
+<div aria-hidden="true" class="hero-visual">
+<div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+<div class="medical-card">
+<div class="medical-cross">+</div><div class="medical-line"></div><div class="medical-line short"></div>
+<div class="medical-heart">♡</div>
+</div>
+<div class="floating-tag"><span class="tag-dot"></span><span data-i18n="visualTag">Preparedness begins at home</span></div>
+</div>
+<div class="hero-index">01 / PULSEGUARD</div>
+</section>
+<section aria-label="Project approach" class="trust-strip">
+<div><strong data-i18n="stripOne">Learn</strong><span data-i18n="stripOneText">Understand the basics</span></div>
+<div><strong data-i18n="stripTwo">Prepare</strong><span data-i18n="stripTwoText">Make a family plan</span></div>
+<div><strong data-i18n="stripThree">Share</strong><span data-i18n="stripThreeText">Build awareness together</span></div>
+</section>
+<section class="section" id="about">
+<div class="section-intro">
+<p class="eyebrow" data-i18n="aboutEyebrow">WHY PULSEGUARD?</p>
+<h2 data-i18n="aboutTitle">Preparedness should feel clear, not overwhelming.</h2>
+<p data-i18n="aboutText">PulseGuard is a youth-led public-health education initiative exploring how families prepare for urgent medical situations and what information could help them plan ahead.</p>
+</div>
+<div class="values">
+<article class="value-card"><span class="value-icon">⌕</span><h3 data-i18n="valueOneTitle">Accessible information</h3><p data-i18n="valueOneText">Present useful information in clear, understandable language.</p></article>
+<article class="value-card"><span class="value-icon">♡</span><h3 data-i18n="valueTwoTitle">Family preparedness</h3><p data-i18n="valueTwoText">Encourage households to discuss contacts and practical plans.</p></article>
+<article class="value-card"><span class="value-icon">✧</span><h3 data-i18n="valueThreeTitle">Community insight</h3><p data-i18n="valueThreeText">Use survey findings and feedback to guide improvements.</p></article>
+</div>
+</section>
+<section class="section phase3-section" id="tools">
+<div class="section-intro">
+<p class="eyebrow" data-p3="p3Eyebrow">PRACTICAL TOOLS / 02</p>
+<h2 data-p3="p3Title">Make preparedness part of your household routine.</h2>
+<p data-p3="p3Intro">Use these educational tools to organize information, learn the basics and reflect on what your household may need. No personal information is sent to PulseGuard.</p>
+</div>
+<div class="p3-grid"><article class="p3-card p3-checklist">
+<p class="eyebrow">01 / PULSEGUARD TOOLKIT</p>
+<h3 data-p3="checkTitle">Family preparedness checklist</h3>
+<p data-p3="checkIntro">Mark the items your household has discussed or prepared. Your progress is saved only in this browser.</p>
+<div class="p3-progress"><div class="p3-progress-top"><span data-p3="progressLabel">Your checklist progress</span><strong id="checkProgress">0/6 · 0%</strong></div><div class="p3-progress-track"><span id="checkProgressBar"></span></div></div>
+<div class="p3-checks">
+<label><input class="prep-check" type="checkbox"/><span data-p3="check1">Know the local emergency number and how to contact emergency services</span></label>
+<label><input class="prep-check" type="checkbox"/><span data-p3="check2">Choose a family meeting place and an out-of-area contact</span></label>
+<label><input class="prep-check" type="checkbox"/><span data-p3="check3">Keep important phone numbers accessible</span></label>
+<label><input class="prep-check" type="checkbox"/><span data-p3="check4">Know where essential medicines and allergy information are recorded</span></label>
+<label><input class="prep-check" type="checkbox"/><span data-p3="check5">Discuss who may need extra help during an emergency</span></label>
+<label><input class="prep-check" type="checkbox"/><span data-p3="check6">Keep a basic first-aid kit and check its contents regularly</span></label>
+</div>
+<button class="button secondary p3-button" data-p3="reset" id="resetChecklist" type="button">Reset checklist</button>
+</article><article class="p3-card">
+<p class="eyebrow">02 / PRINTABLE TOOL</p>
+<h3 data-p3="cardTitle">Emergency information card</h3>
+<p data-p3="cardIntro">Fill in only what you choose. This tool does not save or send the details. Print the card and keep it somewhere safe.</p>
+<form class="p3-form" id="infoCardForm">
+<label><span data-p3="personLabel">Name</span><input autocomplete="off" id="cardName" type="text"/></label>
+<label><span data-p3="contactLabel">Emergency contact and phone</span><input autocomplete="off" id="cardContact" type="text"/></label>
+<label><span data-p3="allergyLabel">Allergies or important medical notes</span><textarea id="cardAllergies" rows="2"></textarea></label>
+<label><span data-p3="medLabel">Medicines (if relevant)</span><textarea id="cardMeds" rows="2"></textarea></label>
+<label><span data-p3="doctorLabel">Doctor or clinic (optional)</span><input autocomplete="off" id="cardDoctor" type="text"/></label>
+<button class="button primary p3-button" data-p3="printCard" id="printCard" type="button">Print information card</button>
+</form>
+<div aria-hidden="true" class="printable-card" id="printableCard"></div>
+</article><article class="p3-card">
+<p class="eyebrow">07 / COMMUNITY</p>
+<h3 data-p3="feedbackTitle">Anonymous feedback</h3>
+<p data-p3="feedbackIntro">Tell us which part of the website was useful or what could be clearer. This prototype does not transmit your response. You can copy it and share it through PulseGuard's public channels if you wish.</p>
+<label class="p3-feedback-label" data-p3="feedbackLabel" for="feedbackText">Your feedback (do not include names or private medical details)</label>
+<textarea data-p3-placeholder="feedbackPlaceholder" id="feedbackText" placeholder="What was useful? What should we improve?" rows="4"></textarea>
+<button class="button secondary p3-button" data-p3="copyFeedback" id="copyFeedback" type="button">Copy feedback</button>
+<p aria-live="polite" class="p3-feedback" id="feedbackStatus"></p>
+</article><article class="p3-card">
+<p class="eyebrow">06 / REFERENCES</p>
+<h3 data-p3="sourceTitle">Trusted learning sources</h3>
+<p data-p3="sourceIntro">Use recognized organizations for further learning. Always follow local emergency-service instructions.</p>
+<ul class="p3-sources">
+<li><a href="https://www.who.int/health-topics" rel="noopener noreferrer" target="_blank">WHO</a><span data-p3="source1">World Health Organization: health topics and public-health guidance</span></li>
+<li><a href="https://www.ifrc.org/our-work/health-and-care/first-aid" rel="noopener noreferrer" target="_blank">IFRC</a><span data-p3="source2">International Federation of Red Cross and Red Crescent Societies: first aid and community preparedness</span></li>
+<li><a href="https://www.nhs.uk/conditions/first-aid/" rel="noopener noreferrer" target="_blank">NHS</a><span data-p3="source3">NHS: general health information and first-aid guidance</span></li>
+</ul>
+<small class="p3-reviewed" data-p3="reviewed">Links checked: November 2026. Review source pages for the latest guidance.</small>
+</article></div>
+<div class="p3-disclaimer"><strong data-p3="disclaimerTitle">Important note</strong><p data-p3="disclaimerText">PulseGuard is an independent educational project. It does not provide emergency response, diagnosis, treatment or professional medical advice. In an emergency, contact local emergency services and follow qualified instructions.</p></div>
+</section>
+<section class="section scenario-section" id="scenario-simulator">
+<div class="section-intro">
+<p class="eyebrow">INTERACTIVE PRACTICE / 04</p>
+<h2>Emergency Scenario Simulator</h2>
+<p>Step into a fictional household situation. Choose a safe next step, learn why it matters, and build confidence in planning. This is an educational simulation, not emergency training.</p>
+</div>
+<div class="scenario-game" id="scenarioGame">
+<div class="scenario-game-head"><span>✦  DECISION LAB</span><span id="scenarioStepLabel">SCENARIO 01 / 08</span></div>
+<div class="scenario-visual"><div class="scenario-orbit"></div><img alt="Illustration of the current household preparedness scenario" class="scenario-image" id="scenarioImage" src=""/><div aria-hidden="true" class="scenario-visual-icon" id="scenarioVisualIcon">🏠</div><div class="scenario-visual-caption">A FICTIONAL HOUSEHOLD SCENARIO</div></div>
+<div class="scenario-progress"><span id="scenarioProgress"></span></div><div aria-label="Scenario difficulty" class="scenario-difficulty" id="scenarioDifficulty"></div>
+<div class="scenario-content"><p class="eyebrow" id="scenarioCategory">HOUSEHOLD PREPAREDNESS</p><h3 id="scenarioQuestion">A family member suddenly becomes very unwell at home. What is the safest first step?</h3><div class="scenario-choices" id="scenarioChoices"></div><div aria-live="polite" class="scenario-feedback" hidden="" id="scenarioFeedback"></div><div class="scenario-controls"><button class="button primary" disabled="" id="scenarioContinue" type="button">Choose an option</button><button class="button secondary" id="scenarioRestart" type="button">Restart all</button><button class="button secondary" hidden="" id="scenarioRetryMissed" type="button">Review missed</button></div></div>
+<div class="scenario-game-foot"><span>🛡️ Learn safely</span><span>🌐 EN · UZ · RU</span><span>↗ Share what you learned</span></div>
+</div>
+<p class="scenario-share-row"><button class="button secondary" id="scenarioShare" type="button">Share this challenge ↗</button><span aria-live="polite" id="scenarioShareStatus"></span></p>
+</section>
+<section class="section mission-section" id="medical-mission">
+<div class="section-intro">
+<p class="eyebrow" id="missionEyebrow">INTERACTIVE LEARNING / 03</p>
+<h2 id="missionTitle">PulseGuard Medical Mission</h2>
+<p id="missionIntro">Five random questions each round. Learn everyday health essentials, collect achievements and guide the ambulance to the hospital.</p>
+</div>
+<div class="mission-shell" id="missionApp">
+<div class="mission-topline"><span id="missionRoundLabel">YOUR MISSION</span><span id="missionBankLabel">100-question learning bank</span></div>
+<div class="mission-hero">
+<div class="mission-track-wrap">
+<div class="mission-progress-meta"><span id="missionProgressLabel">Journey progress</span><strong id="missionProgressText">0 / 5</strong></div>
+<div class="mission-track"><span id="missionTrackFill"></span></div>
+<div class="mission-route"><span class="mission-start">START</span><span aria-label="Ambulance" class="mission-ambulance" id="missionAmbulance">🚑</span><span class="mission-hospital">🏥</span></div>
+</div>
+<div class="mission-score"><span id="missionScoreLabel">Correct</span><strong id="missionScore">0</strong><small id="missionScoreOutOf">out of 5</small></div>
+</div>
+<div class="mission-round-picker"><label for="missionRoundSelect">Choose a learning round</label><select id="missionRoundSelect"><option value="mixed">Mixed challenge</option><option value="first-aid">First-aid awareness</option><option value="safety">Safety &amp; prevention</option><option value="smart-health-choices">Smart health choices</option><option value="medicines">Medicine safety</option><option value="healthy-living">Healthy living &amp; hygiene</option></select></div>
+<div class="mission-welcome" id="missionWelcome">
+<div class="mission-icon">✚</div><h3 id="missionWelcomeTitle">Ready for your medical mission?</h3>
+<p id="missionWelcomeText">Answer five randomly selected questions. Each correct answer moves the ambulance closer to the hospital. Read the explanation and source after every answer.</p>
+<button class="button primary" id="missionStart" type="button">Start mission</button>
+</div>
+<div class="mission-question-area" hidden="" id="missionQuestionArea">
+<div class="mission-question-meta"><span id="missionQuestionCount">QUESTION 1 OF 5</span><span id="missionCategory">EVERYDAY HEALTH</span></div>
+<h3 id="missionQuestion">Question text</h3>
+<div class="mission-options" id="missionOptions"></div>
+<div aria-live="polite" class="mission-feedback" hidden="" id="missionFeedback"></div>
+<div class="mission-actions"><button class="button primary" disabled="" id="missionCheck" type="button">Check answer</button><button class="button secondary" hidden="" id="missionNext" type="button">Next question</button></div>
+</div>
+<div class="mission-result" hidden="" id="missionResult">
+<div class="mission-trophy" id="missionTrophy">🏆</div><p class="eyebrow" id="missionResultEyebrow">MISSION COMPLETE</p><h3 id="missionResultTitle">Well done!</h3><p id="missionResultText"></p>
+<div class="mission-result-score"><strong id="missionFinalScore">0/5</strong><span id="missionFinalPercent">0%</span></div>
+<div class="mission-achievement" id="missionAchievement"></div>
+<div class="mission-actions"><button class="button primary" id="missionAgain" type="button">Play another round</button></div>
+<p class="mission-small" id="missionResultNote">This is an educational game, not medical training or a qualification.</p>
+</div>
+<div class="mission-footnote" id="missionFootnote">Questions are educational and reviewed against the linked guidance. Follow local emergency services and qualified professionals.</div>
+</div>
+</section>
+<section class="research-section" id="research">
+<div class="research-heading-row">
+<div>
+<p class="eyebrow" data-i18n="researchEyebrow">COMMUNITY RESEARCH / 01</p>
+<h2 data-i18n="researchTitle">What does household preparedness look like?</h2>
+<p class="research-lead" data-i18n="researchText">An initial survey explored preparedness, information needs, and preferred educational resources.</p>
+</div>
+<div class="sample-card">
+<span class="sample-kicker" data-i18n="sampleLabel">INITIAL SURVEY</span>
+<strong class="sample-number">06</strong>
+<span data-i18n="respondents">respondents</span>
+<small data-i18n="sampleNote">Six submitted responses included in this preliminary summary.</small>
+</div>
+</div>
+<div class="metric-grid">
+<article class="metric-card"><span class="metric-label" data-i18n="metricPrepared">Felt very or somewhat prepared</span><strong>4/6</strong><span class="metric-foot" data-i18n="metricPreparedFoot">66.7% of respondents</span></article>
+<article class="metric-card"><span class="metric-label" data-i18n="metricKnow">Definitely knew how to contact emergency services</span><strong>4/6</strong><span class="metric-foot" data-i18n="metricKnowFoot">66.7% of respondents</span></article>
+<article class="metric-card"><span class="metric-label" data-i18n="metricWebsite">Preferred a simple website</span><strong>4/6</strong><span class="metric-foot" data-i18n="metricWebsiteFoot">66.7% of respondents</span></article>
+<article class="metric-card"><span class="metric-label" data-i18n="metricInterest">Interested or maybe interested in a free resource</span><strong>6/6</strong><span class="metric-foot" data-i18n="metricInterestFoot">100% combined</span></article>
+</div>
+<details class="research-details">
+<summary>Explore the full survey results <span>View all eight charts, observations and methodology</span></summary>
+<div class="chart-intro">
+<div><p class="eyebrow" data-i18n="breakdownEyebrow">RESPONSE BREAKDOWN</p><h3 data-i18n="breakdownTitle">Eight questions. One early snapshot.</h3></div>
+<p data-i18n="chartHint">Bars show the share of the six respondents who selected each answer. Counts are shown beside percentages.</p>
+</div>
+<div aria-live="polite" class="chart-grid" id="surveyCharts"></div>
+<div class="insight-panel">
+<div class="insight-title"><p class="eyebrow" data-i18n="insightEyebrow">EARLY SIGNALS</p><h3 data-i18n="insightTitle">What we can take from this first snapshot</h3></div>
+<div class="insight-list">
+<article><span>01</span><div><h4 data-i18n="insightOneTitle">Preparedness is more than knowing a number</h4><p data-i18n="insightOneText">Four respondents felt very or somewhat prepared, while two reported low or no preparedness. Knowing how to contact emergency services does not automatically mean a household feels ready.</p></div></article>
+<article><span>02</span><div><h4 data-i18n="insightTwoTitle">Clear, organized information matters</h4><p data-i18n="insightTwoText">Emergency contact numbers were the most selected information need. Not knowing what to prepare and finding trustworthy information were the most frequently selected barriers.</p></div></article>
+<article><span>03</span><div><h4 data-i18n="insightThreeTitle">A simple website is worth testing</h4><p data-i18n="insightThreeText">Four respondents preferred a simple website. All six answered yes or maybe when asked about a free educational resource.</p></div></article>
+</div>
+</div>
+<div class="method-note">
+<span class="method-icon">i</span>
+<div><strong data-i18n="methodTitle">Methodology and limitations</strong><p data-i18n="methodText">This is a descriptive summary of six survey responses. Percentages are calculated from the displayed counts and rounded to one decimal place. The sample is small and may not represent the wider community. Results are preliminary and should not be generalized.</p></div>
+</div>
+</details>
+</section>
+<section class="section resource-section" id="resources">
+<div class="section-intro">
+<p class="eyebrow" data-i18n="resourcesEyebrow">NEXT STEPS</p>
+<h2 data-i18n="resourcesTitle">Turn community questions into useful resources.</h2>
+<p data-i18n="resourcesText">PulseGuard will use feedback to shape practical planning tools and accessible educational information.</p>
+</div>
+<div class="resource-grid">
+<article><span>01</span><h3 data-i18n="resourceOneTitle">Family planning</h3><p data-i18n="resourceOneText">A simple checklist to discuss with your household.</p></article>
+<article><span>02</span><h3 data-i18n="resourceTwoTitle">Learning resources</h3><p data-i18n="resourceTwoText">Find recognized first-aid and public-health education.</p></article>
+<article><span>03</span><h3 data-i18n="resourceThreeTitle">Research updates</h3><p data-i18n="resourceThreeText">Explore how participant feedback guides the project.</p></article>
+</div>
+</section>
+<section class="closing" id="contact">
+<p class="eyebrow" data-i18n="closingEyebrow">BE PART OF THE CONVERSATION</p>
+<h2 data-i18n="closingTitle">Better preparedness begins with better questions.</h2>
+<p data-i18n="closingText">Follow PulseGuard as the project develops its research, resources, and community feedback process.</p>
+<a class="button primary" data-i18n="contactButton" href="mailto:parvinashodikulova4@gmail.com">Contact the project</a>
+<p class="disclaimer dark" data-i18n="safetyNote">For an immediate emergency, contact your local emergency service. PulseGuard is educational and does not provide diagnosis or treatment.</p>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-main">
+<div class="footer-brand-block"><a class="brand footer-brand" href="#home"><span class="brand-icon">✚</span>PulseGuard</a><p>Be Prepared. Be Aware. Protect Lives.</p><small>Independent youth-led public-health education project.</small></div>
+<div class="footer-column"><strong>Explore</strong><a href="#about">About</a><a href="#tools">Toolkit</a><a href="#scenario-simulator">Emergency Scenario</a><a href="#medical-mission">Medical Mission</a></div>
+<div class="footer-column"><strong>Discover</strong><a href="#research">Research</a><a href="#resources">Resources</a><a href="#contact">Contact</a></div>
+<div class="footer-column footer-social"><strong>Follow the project</strong><a href="https://www.instagram.com/pulseguard_/" rel="noopener noreferrer" target="_blank">Instagram ↗</a><a href="https://t.me/pulseguard" rel="noopener noreferrer" target="_blank">Telegram ↗</a><a href="mailto:parvinashodikulova4@gmail.com">Email ↗</a></div>
+</div>
+<div class="footer-bottom"><span>© 2026 PulseGuard</span><span>Educational information only. In an emergency, contact local emergency services.</span><a href="#home">Back to top ↑</a></div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
-    
